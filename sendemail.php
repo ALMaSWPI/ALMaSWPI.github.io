@@ -1,7 +1,7 @@
 <?php
 
 $EmailFrom="noreply@mydomain.com";
-$EmailTo="myemail@mydomain.com";
+$EmailTo="pxu2@wpi.edu";
 //$Subject="Email from the Contact Form";
 $Name=Trim(stripslashes($_POST['name']));
 $Email=Trim(stripslashes($_POST['email']));
