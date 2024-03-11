@@ -1,6 +1,6 @@
-# HERO Lab Website
+# ALMaS Lab Website
 
-Welcome to the official website of the HERO (Horizon Exploratory Robotics) Lab at WPI! This repository contains the source code and content for our lab's website, serving as a central hub for information about our laboratory, its members, ongoing projects, and resources.
+Welcome to the official website of the ALMaS (Autonomous Loco-Manipulation Systems) Lab at WPI! This repository contains the source code and content for our lab's website, serving as a central hub for information about our laboratory, its members, ongoing projects, and resources.
 
 ## Navigation
 
