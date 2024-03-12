@@ -98,7 +98,7 @@
                         <h2 class="section-title text-center wow fadeInDown animated" style="visibility: visible;">Send Message</h2>
                         <p class="text-center wow fadeInDown animated" style="visibility: visible;">If you are interested in working with us, please use the following form to send us a message.</p>
                     </div>
-                    <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
+                    <!-- <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
                         <div class="col-lg-6 animated animate-from-left" style="opacity: 1; left: 0px;">
     
                             <div class="form-group">
@@ -128,6 +128,50 @@
     
                         </div>
     
+                    </form> -->
+
+                    <!-- <form
+                        action="https://formspree.io/f/mgegzrqj"
+                        method="POST"
+                        >
+                        <label>
+                            Your email:
+                            <input type="email" name="email">
+                        </label>
+                        <label>
+                            Your message:
+                            <textarea name="message"></textarea>
+                        </label>
+                        <button type="submit">Send</button>
+                    </form> -->
+
+                    <form id="main-contact-form" name="contact-form" method="post" action="https://formspree.io/f/mgegzrqj">
+                        <div class="col-lg-6 animated animate-from-left" style="opacity: 1; left: 0px;">
+                    
+                            <div class="form-group">
+                                <label for="name">Your Name (Required)</label>
+                                <input id="name" type="text" name="name" class="form-control" placeholder="Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
+                            </div>
+                        </div>
+                    
+                        <div class="col-lg-6 animated animate-from-right" style="opacity: 1; right: 0px;">
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea name="message" id="message" class="form-control" rows="8" placeholder="Message" required></textarea>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg btn-send-msg">Send Message</button>
+                        </div>
                     </form>
     
                 </div>
