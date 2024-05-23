@@ -313,37 +313,6 @@
 
 
 
-<script>
-    const video = document.getElementById('sophtVideo');
-    const playPauseButton = document.getElementById('playPauseButton');
-
-    video.addEventListener('click', function() {
-        if (video.paused) {
-            video.play();
-            playPauseButton.style.display = 'none';
-        } else {
-            video.pause();
-            playPauseButton.style.display = 'block';
-        }
-    });
-
-    playPauseButton.addEventListener('click', function() {
-        if (video.paused) {
-            video.play();
-            playPauseButton.style.display = 'none';
-        } else {
-            video.pause();
-            playPauseButton.style.display = 'block';
-        }
-    });
-
-    // Initially hide the button if the video is playing
-    if (!video.paused) {
-        playPauseButton.style.display = 'none';
-    }
-</script>
-
-
 
 	
 </body>
