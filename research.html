@@ -142,12 +142,13 @@
         <p id="hiddenText3" style="display: none; margin-top: 10px;">Openings: 1 MS student (RBE or ME)</p>
     </div>
     <div class="col-sm-6 wow fadeInLeft">
-        <video class="video-responsive" autoplay muted loop>
+        <video id="sophtVideo" class="video-responsive" autoplay muted loop>
             <source src="projectImages/sopht.mov" type="video/quicktime">
             Your browser does not support the video tag.
         </video>
     </div>
 </div>
+
 
 
 
@@ -307,5 +308,21 @@
     <script src="js/jquery.inview.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
+
+
+
+<script>
+    document.getElementById('sophtVideo').addEventListener('click', function() {
+        var video = this;
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    });
+</script>
+
+
+	
 </body>
 </html>
