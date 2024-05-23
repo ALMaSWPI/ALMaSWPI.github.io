@@ -241,10 +241,7 @@ ul.nostyle i {
     z-index: -1;
     object-fit: cover;
 }
-.video-responsive {
-    width: 100%;
-    height: auto;
-}
+
 
 #main-slider .slider-inner {
   position: absolute;
@@ -296,6 +293,13 @@ ul.nostyle i {
   right: -35px;
   text-indent: -14px;
 }
+.video-responsive {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
 #bar {
   width: 0%;
   max-width: 100%;
