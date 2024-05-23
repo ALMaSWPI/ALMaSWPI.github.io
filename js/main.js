@@ -210,3 +210,4 @@ document.addEventListener('DOMContentLoaded', function() {
         playPauseButton.style.display = 'block';
     }
 });
+
