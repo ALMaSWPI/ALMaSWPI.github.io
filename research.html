@@ -141,13 +141,15 @@
             Opportunities</button>
         <p id="hiddenText3" style="display: none; margin-top: 10px;">Openings: 1 MS student (RBE or ME)</p>
     </div>
-    <div class="col-sm-6 wow fadeInLeft">
+    <div class="col-sm-6 wow fadeInLeft" style="position: relative;">
         <video id="sophtVideo" class="video-responsive" autoplay muted loop>
-            <source src="projectImages/sopht.mov" type="video/quicktime">
+            <source src="projectImages/sopht.move" type="video/quicktime">
             Your browser does not support the video tag.
         </video>
+        <button id="playPauseButton" class="play-pause-btn"></button>
     </div>
 </div>
+
 
 
 
@@ -312,15 +314,35 @@
 
 
 <script>
-    document.getElementById('sophtVideo').addEventListener('click', function() {
-        var video = this;
+    const video = document.getElementById('sophtVideo');
+    const playPauseButton = document.getElementById('playPauseButton');
+
+    video.addEventListener('click', function() {
         if (video.paused) {
             video.play();
+            playPauseButton.style.display = 'none';
         } else {
             video.pause();
+            playPauseButton.style.display = 'block';
         }
     });
+
+    playPauseButton.addEventListener('click', function() {
+        if (video.paused) {
+            video.play();
+            playPauseButton.style.display = 'none';
+        } else {
+            video.pause();
+            playPauseButton.style.display = 'block';
+        }
+    });
+
+    // Initially hide the button if the video is playing
+    if (!video.paused) {
+        playPauseButton.style.display = 'none';
+    }
 </script>
+
 
 
 	
