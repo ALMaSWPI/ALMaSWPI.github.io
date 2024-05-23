@@ -232,6 +232,15 @@ ul.nostyle i {
   background-position: 50% 0;
   background-size: cover;
 }
+#background-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
 #main-slider .slider-inner {
   position: absolute;
   top: 0;
