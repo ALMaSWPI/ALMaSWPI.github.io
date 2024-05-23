@@ -180,4 +180,34 @@ jQuery(function($) {'use strict';
 
 
 
+
+// Add the new code at the end of main.js
+document.addEventListener('DOMContentLoaded', function() {
+    const video = document.getElementById('sophtVideo');
+    const playPauseButton = document.getElementById('playPauseButton');
+
+    function togglePlayPause() {
+        if (video.paused) {
+            video.play();
+            playPauseButton.innerHTML = '&#10074;&#10074;'; // Pause symbol
+        } else {
+            video.pause();
+            playPauseButton.innerHTML = '&#9658;'; // Play symbol
+        }
+    }
+
+    video.addEventListener('click', togglePlayPause);
+    playPauseButton.addEventListener('click', togglePlayPause);
+
+    // Initially hide the button if the video is playing
+    if (!video.paused) {
+        playPauseButton.innerHTML = '&#10074;&#10074;'; // Pause symbol
+        playPauseButton.style.display = 'none';
+    } else {
+        playPauseButton.innerHTML = '&#9658;'; // Play symbol
+    }
+});
+
+
+
 });
