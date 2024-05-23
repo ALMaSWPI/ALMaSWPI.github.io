@@ -317,9 +317,6 @@ ul.nostyle i {
     display: none;
 }
 
-#sophtVideo.paused + #playPauseButton {
-    display: block;
-}
 
 
 
