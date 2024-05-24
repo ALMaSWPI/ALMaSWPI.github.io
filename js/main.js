@@ -1,4 +1,4 @@
-jQuery(function($) {'use strict'; 
+jQuery(function($) {'use strict';
 
 	// Navigation Scroll
 		(function($){
@@ -177,3 +177,7 @@ jQuery(function($) {'use strict';
 	$("a[rel^='prettyPhoto']").prettyPhoto({
 		social_tools: false
 	});
+
+
+
+});
