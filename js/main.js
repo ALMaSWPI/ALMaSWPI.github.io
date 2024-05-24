@@ -1,4 +1,4 @@
-jQuery(function($) {'use strict';
+jQuery(function($) {'use strict'; 
 
 	// Navigation Scroll
 		(function($){
