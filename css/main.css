@@ -15,7 +15,7 @@ body {
   font-weight: 400;
   color: #64686d;
   line-height: 26px;
-} 
+}
 h1,
 h2,
 h3,
@@ -283,7 +283,6 @@ ul.nostyle i {
   right: -35px;
   text-indent: -14px;
 }
-
 #bar {
   width: 0%;
   max-width: 100%;
