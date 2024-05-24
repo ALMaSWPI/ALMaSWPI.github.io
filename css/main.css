@@ -232,16 +232,6 @@ ul.nostyle i {
   background-position: 50% 0;
   background-size: cover;
 }
-#background-video {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-    object-fit: cover;
-}
-
 
 #main-slider .slider-inner {
   position: absolute;
@@ -293,35 +283,6 @@ ul.nostyle i {
   right: -35px;
   text-indent: -14px;
 }
-
-
-.video-responsive {
-    width: 100%;
-    height: auto;
-    display: block;
-    max-width: 100%;
-}
-
-.play-pause-btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: white;
-    font-size: 2em;
-    cursor: pointer;
-    padding: 10px 20px;
-    border-radius: 50%;
-    display: none;
-}
-
-
-
-
-
-
 
 #bar {
   width: 0%;
