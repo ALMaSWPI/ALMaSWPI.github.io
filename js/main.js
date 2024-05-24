@@ -178,36 +178,3 @@ jQuery(function($) {'use strict';
 		social_tools: false
 	});
 
-
-
-
-//video play-pause		    
-document.addEventListener('DOMContentLoaded', function() {
-    const video = document.getElementById('sophtVideo');
-    const playPauseButton = document.getElementById('playPauseButton');
-
-    function togglePlayPause() {
-        if (video.paused) {
-            video.play();
-            playPauseButton.innerHTML = '&#10074;&#10074;'; // Pause symbol
-            playPauseButton.style.display = 'none';
-        } else {
-            video.pause();
-            playPauseButton.innerHTML = '&#9658;'; // Play symbol
-            playPauseButton.style.display = 'block';
-        }
-    }
-
-    video.addEventListener('click', togglePlayPause);
-    playPauseButton.addEventListener('click', togglePlayPause);
-
-    // Initially set the button symbol based on the video state
-    if (!video.paused) {
-        playPauseButton.innerHTML = '&#10074;&#10074;'; // Pause symbol
-        playPauseButton.style.display = 'none';
-    } else {
-        playPauseButton.innerHTML = '&#9658;'; // Play symbol
-        playPauseButton.style.display = 'block';
-    }
-});
-
