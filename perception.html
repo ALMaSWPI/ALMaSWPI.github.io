@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Projects</title>
-	<!-- core CSS -->
+    <!-- core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
@@ -18,8 +18,7 @@
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
-    <![endif]-->       
-    <!-- <link rel="shortcut icon" href="images/ico/favicon.ico"> -->
+    <![endif]-->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
@@ -28,97 +27,82 @@
 
 <body id="home" class="homepage">
 
-
     <header id="top-header" class="navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <!-- responsive nav button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <!-- /responsive nav button -->
-                    
-                    <!-- logo -->
-                    <div class="navbar-brand">
-                        <a href="index.html" >
-                            <img src="projectImages/almas2.png" alt="" width="160px">
-                        </a>
-                    </div>
-                    <!-- /logo -->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand">
+                    <a href="index.html">
+                        <img src="projectImages/almas2.png" alt="" width="160px">
+                    </a>
                 </div>
-
-                <!-- main nav -->
-                <nav class="collapse navbar-collapse navbar-right" role="navigation">
-                    <div>
-                        <ul id="nav" class="nav navbar-nav">
-                            <li class="scroll"><a href="index.html" data-section="#home">Home</a></li>
-                            <li class="scroll"><a href="index.html#about" data-section="#about">About</a></li>
-                            <li><a href="research.html">Projects</a></li>
-                            <li><a href="people.html">People</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="acknowledgement.html">Acknowledgement</a></li>
-                        </ul>
-                    </div>
-                </nav>
-                <!-- <nav class="collapse navbar-collapse navbar-right" role="navigation">
-                    <div>
-                        <ul id="nav" class="nav navbar-nav">
-                            <li class="scroll"><a href="#home" data-section="#home">Home</a></li>
-                            <li class="scroll"><a href="#about" data-section="#about">About</a></li>
-                            <li><a href="https://users.wpi.edu/~mmaghelih/BiQu.html">BiQu</a></li>
-                            <li><a href="https://users.wpi.edu/~mmaghelih/HURON/HURON.html">HURON</a></li>
-                            <li><a href="https://github.com/echandler5956f/Galileo">Galileo</a></li>
-                            <li class="scroll"><a href="#sponsors" data-section="#sponsors">Sponsors</a></li>
-                        </ul>
-                    </div>
-                </nav> -->
-                <!-- /main nav -->
-                
             </div>
-        </header>
+            <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                <div>
+                    <ul id="nav" class="nav navbar-nav">
+                        <li class="scroll"><a href="index.html" data-section="#home">Home</a></li>
+                        <li class="scroll"><a href="index.html#about" data-section="#about">About</a></li>
+                        <li><a href="research.html">Projects</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="acknowledgement.html">Acknowledgement</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
 
     <section id="about">
         <div class="container">
-<!--
-            <div style="display: flex; justify-content: center; margin-bottom: 100px;">
-                 <img class="img-responsive" src="projectImages/go1.jpeg" alt=""> 
-                <iframe width="672" height="378" src="https://www.youtube.com/embed/Jq3-2dfzq1c" frameborder="0" allowfullscreen></iframe>
-            </div>
--->
-		
             <div class="section-header">
                 <h2 class="section-title text-center wow fadeInDown">Current Projects</h2>
             </div>
-
-
-		
-		
             <div class="row" style="margin-bottom: 50px;">
                 <div class="col-sm-6 wow fadeInRight">
-                    <h3 class="column-title">BiQu (Bimodal Quadruped Robot)</h3>
+                    <h3 class="column-title">Perceptive Locomotion</h3>
                     <p>
-                        BiQu (Bimodal Quadruped) started out as a Major Qualifying Project at WPI. The goal was to explore multi-modal locomotion, including getting a quadruped to stand on two legs. The original five-person BiQu team built a 12-DoF quadruped based on the Solo-12 design, and created BiQu Software, which allowed the robot to perform backflips and walking gaits in simulation. Inspired by this work, several M.S. students at WPI continued the project over the summer, and created their own backflip controller using a pseudospectral collocation method. This work was presented at WPI's EREE. BiQu has since grown into a mature research endeavor at WPI, with the goal of furthering the field of legged loco-manipulation.
+                        Perceptive locomotion is an advanced robotic capability that integrates perception and locomotion to allow robots to navigate complex environments safely and efficiently. In our project, we enhanced the Unitree Go1 robot with perceptive locomotion capabilities by mounting a RealSense D435i depth camera to the front of the robot. This camera produces point cloud data, which is analyzed to compute step-able areas in the environment.
                     </p>
-
-                    <a class="btn btn-primary" href="biqu.html">Learn more</a>
-                    <button class="btn btn-primary" onclick="document.getElementById('hiddenText1').style.display = (document.getElementById('hiddenText1').style.display === 'none') ? 'block' : 'none'">
-                        Opportunities</button>
-                    <p id="hiddenText1" style="display: none; margin-top: 10px;">Openings: 1 MS student (RBE or ME)</p>
-
-        
+                    <p>
+                        <strong>Key Components and Process:</strong>
+                    </p>
+                    <ul>
+                        <li><strong>Perception System:</strong>
+                            <ul>
+                                <li><strong>Depth Camera:</strong> The RealSense D435i depth camera captures depth information and generates 3D point clouds of the surroundings.</li>
+                                <li><strong>Point Cloud Analysis:</strong> The point cloud data is processed to identify and segment step-able regions in the environment. This segmentation ensures that the robot only steps on valid, safe areas, avoiding obstacles and hazardous zones.</li>
+                                <li><strong>Elevation Mapping:</strong> Implementing elevation mapping algorithms, the robot constructs a 3D map of the terrain, identifying various elevations and surfaces it can step on.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Control System:</strong>
+                            <ul>
+                                <li><strong>Model Predictive Control (MPC):</strong> The control system uses the segmented perception data to generate safe trajectories. MPC helps in planning the robot's movements over a receding horizon, adjusting the robot's steps in real-time based on the current perception data.</li>
+                                <li><strong>Whole-Body Control (WBC):</strong> The WBC system operates at a higher frequency to follow the trajectories planned by the MPC. It ensures that the robot's joints and body movements are synchronized for stable locomotion.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Integration and Testing:</strong>
+                            <ul>
+                                <li><strong>Simulation Environment:</strong> Initial testing was conducted in a simulation environment using ROS Neotic and Gazebo. This setup allowed for thorough testing and refinement of the perceptive locomotion algorithms before deploying them on the physical robot.</li>
+                                <li><strong>Real-World Deployment:</strong> After successful simulations, the perceptive locomotion framework was deployed on the actual Unitree Go1 robot. Various experiments demonstrated the robot's ability to navigate complex terrains, such as climbing stairs and avoiding obstacles, using the enhanced perception system.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Challenges and Future Work:</strong>
+                            <ul>
+                                <li><strong>Map Drifting Issues:</strong> One of the significant challenges faced was map drifting due to the limited field of view of the single mounted camera. This issue can be mitigated by adding more cameras around the robot's body to provide comprehensive environmental coverage.</li>
+                                <li><strong>Integration with Galileo:</strong> Future work involves integrating the perception system with the Galileo motion planning solver to improve computational efficiency and real-time responsiveness.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>
+                        Perceptive locomotion significantly enhances the safety and efficiency of robotic movements in complex environments, making it a crucial capability for various applications, including logistics, construction, and planetary exploration.
+                    </p>
+                </div>
             </div>
-
-
-
-	 
-
-
-
-       
-		
         </div>
     </section><!--/#about-->
 
@@ -129,7 +113,6 @@
                     <p class="text-center">
                         &copy; 2024 ALMaS Designed and Developed by <a target="_blank" href="http://themeinthebox.com" title="Free Twitter Bootstrap WordPress Themes and HTML templates">themeinthebox.com</a>
                     </p>
-                    
                     <ul class="social-icons text-center">
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
