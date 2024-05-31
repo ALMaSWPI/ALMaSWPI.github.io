@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -63,31 +63,98 @@
                         </ul>
                     </div>
                 </nav>
-                <!-- <nav class="collapse navbar-collapse navbar-right" role="navigation">
-                    <div>
-                        <ul id="nav" class="nav navbar-nav">
-                            <li class="scroll"><a href="#home" data-section="#home">Home</a></li>
-                            <li class="scroll"><a href="#about" data-section="#about">About</a></li>
-                            <li><a href="https://users.wpi.edu/~mmaghelih/BiQu.html">BiQu</a></li>
-                            <li><a href="https://users.wpi.edu/~mmaghelih/HURON/HURON.html">HURON</a></li>
-                            <li><a href="https://github.com/echandler5956f/Galileo">Galileo</a></li>
-                            <li class="scroll"><a href="#sponsors" data-section="#sponsors">Sponsors</a></li>
-                        </ul>
-                    </div>
-                </nav> -->
-                <!-- /main nav -->
                 
             </div>
         </header>
 
-    <iframe src="https://almaswpi.github.io/biqu_website/" width="100%" height="1000px" frameborder="0"></iframe>
+    <section id="about">
+        <div class="container">
+		
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">BiQu (Bimodal Quadruped Robot)</h2>
+            </div>
 
-    <footer id="footer">
+            <div class="row">
+                <div class="col-sm-6 wow fadeInRight">
+                    <h3 class="column-title">Overview</h3>
+                    <p>
+                        Legged robots have been used for workflow automation, deployment in hazardous environments, and variety of other tasks. The task requirements determine which type of legged robot to use, limiting to one form of locomotion. For example, when traversing uneven terrains, one can benefit from the stability of quadruped robots. When it comes to manipulating objects, reaching high objects, or navigating in narrow spaces, the dexterity of bipedal robots might be beneficial.
+What if the robot has all these together?
+                    </p>
+                </div>
+                <div class="col-sm-6 wow fadeInLeft">
+                       <!-- <iframe width="373" height="257" src="https://www.youtube.com/embed/reKhCSHl3T0?mute=1&autoplay=1&loop=1&playlist=reKhCSHl3T0" frameborder="0" allowfullscreen style="margin-left: 130px;"></iframe> -->
+                       <img src="projectImages/biqu_bipedal.gif" alt="" width="380px"  style="margin-left: 130px;">
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 80px; margin-bottom: 30px;">
+                
+                <div class="col-sm-6 wow fadeInLeft">
+                       <!-- <iframe width="373" height="257" src="https://www.youtube.com/embed/reKhCSHl3T0?mute=1&autoplay=1&loop=1&playlist=reKhCSHl3T0" frameborder="0" allowfullscreen style="margin-left: 130px;"></iframe>
+                     -->
+                     <img src="projectImages/biqu24.png" alt="" style="margin-left: 130px;" width="380px">
+                </div>
+                <div class="col-sm-6 wow fadeInRight">
+                    <h3 class="column-title">BiQu '24</h3>
+                    <p>
+                        The application of legged robots requires planning through contact. When contact is involved, the planning problem becomes significantly harder. Not only do the dynamic systems that govern robot motion change but, with manipulation, so do the environment and robot states. The planning problem becomes a hybrid one, where continuous motion plans have to be made alongside the discrete decisions of when and where robots should make or break contact with the environment. In this work during 2023-2024, we are concerned with the “loco-manipulation” planning problem. That is, performing manipulation while locomoting a legged robot.
+                    </p>
+                    <button class="btn btn-primary" onclick="document.getElementById('hiddenPara2').style.display = (document.getElementById('hiddenPara2').style.display === 'none') ? 'block' : 'none'">
+                        Read more</button>
+                </div>
+            </div>
+            <div class="row" id="hiddenPara2" style="display: none;">
+                <div class="col-sm-6 wow fadeInLeft">
+                    <img src="projectImages/biqu_galileo.gif" alt="" width="380px"  style="margin-left: 130px;">
+                </div>
+                <div class="col-sm-6 wow fadeInRight">
+                    <p>Objectives</p>
+                    <ul>
+                        <li>Development of a Go1 & ROS interfacing 3 DoF arm</li>
+                        <li>Enable perception and elevation mapping capabilities to Go1</li>
+                        <li>Development of open-source trajectory optimization library: Galileo</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 80px; margin-bottom: 30px;">
+                <div class="col-sm-6 wow fadeInRight">
+                    <h3 class="column-title">BiQu '23</h3>
+                    <p>
+                        In academic year 2022-2023, focus of the project is on the development of a quadruped robot named Solo 12, which will be integrated to switch seamlessly between quadrupedal and bipedal modes of lo- comotion. This adaptability makes it ideal for navigating unstructured environments. The project delves into the integration of dynamic control system, technical aspects of the robot’s development, including hardware architecture, electronics installation, and software stack with an emphasis on locomotion controls. Additionally, the project explores the use of computer vision technology for person tracking.
+                    </p>
+                    <button class="btn btn-primary" onclick="document.getElementById('hiddenPara1').style.display = (document.getElementById('hiddenPara1').style.display === 'none') ? 'block' : 'none'">
+                        Read more</button>
+                </div>
+                <div class="col-sm-6 wow fadeInLeft">
+                       <!-- <iframe width="373" height="257" src="https://www.youtube.com/embed/reKhCSHl3T0?mute=1&autoplay=1&loop=1&playlist=reKhCSHl3T0" frameborder="0" allowfullscreen style="margin-left: 130px;"></iframe>
+                     -->
+                     <img src="projectImages/biqu23.png" alt="" style="margin-left: 130px;" width="380px">
+                </div>
+            </div>
+            <div class="row" id="hiddenPara1" style="display: none;">
+                <div class="col-sm-6 wow fadeInRight">
+                    <p>Objectives</p>
+                    <ul>
+                        <li>Extend 8-DOF to a 12-DOF quadruped robot</li>
+                        <li>Implement dynamic control system to allow robot navigation on different surfaces</li>
+                        <li>Enable robot with perception for person tracking</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 wow fadeInLeft">
+                    <img src="projectImages/biqu23_sim.gif" alt="" width="380px"  style="margin-left: 130px;">
+                </div>
+            </div>
+
+            
+
+    <footer id="footer" style="margin-top: 50px;">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
                     <p class="text-center">
-                        &copy; 2024 HERO. Designed and Developed by <a target="_blank" href="http://themeinthebox.com" title="Free Twitter Bootstrap WordPress Themes and HTML templates">themeinthebox.com</a>
+                        &copy; 2024 ALMaS Designed and Developed by <a target="_blank" href="http://themeinthebox.com" title="Free Twitter Bootstrap WordPress Themes and HTML templates">themeinthebox.com</a>
                     </p>
                     
                     <ul class="social-icons text-center">
