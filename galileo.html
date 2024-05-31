@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Projects</title>
+    <!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.transitions.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- <link rel="shortcut icon" href="images/ico/favicon.ico"> -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body id="home" class="homepage">
+
+
+    <header id="top-header" class="navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- responsive nav button -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- /responsive nav button -->
+
+                <!-- logo -->
+                <div class="navbar-brand">
+                    <a href="index.html">
+                        <img src="projectImages/almas2.png" alt="" width="160px">
+                    </a>
+                </div>
+                <!-- /logo -->
+            </div>
+
+            <!-- main nav -->
+            <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                <div>
+                    <ul id="nav" class="nav navbar-nav">
+                        <li class="scroll"><a href="index.html" data-section="#home">Home</a></li>
+                        <li class="scroll"><a href="index.html#about" data-section="#about">About</a></li>
+                        <li><a href="research.html">Projects</a></li>
+                        <li><a href="people.html">People</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="acknowledgement.html">Acknowledgement</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">BiQu (Bimodal Quadruped Robot)</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 wow fadeInRight">
+                    <h3 class="column-title">Overview</h3>
+                    <p>
+                        <a href="https://github.com/echandler5956f/Galileo">Galileo</a> is the result of Ethan
+                        Chandler's Masters Thesis and Bachelor's Capstone project (MQP). It is a light-weight and
+                        extensible C++ library for Gauss-Legendre Pseudospectral collocation, with a focus on switched
+                        systems. Galileo is named after famous scientist Galileo Galilei, who posed one variation of the
+                        Brachistochone problem, which is a classic problem in the calculus of variations. The library is
+                        designed to be used for optimal control of legged robots, but it can be used for any system that
+                        can be modeled as a hybrid dynamical system.
+                    </p>
+                </div>
+                <div class="col-sm-6 wow fadeInLeft">
+                    <!-- <iframe width="373" height="257" src="https://www.youtube.com/embed/reKhCSHl3T0?mute=1&autoplay=1&loop=1&playlist=reKhCSHl3T0" frameborder="0" allowfullscreen style="margin-left: 130px;"></iframe> -->
+                    <img src="projectImages/BiQu_stairclimbing2.gif" alt="" width="380px" style="margin-left: 130px;">
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 80px; margin-bottom: 30px;">
+
+                <div class="col-sm-6 wow fadeInLeft">
+                    <!-- <iframe width="373" height="257" src="https://www.youtube.com/embed/reKhCSHl3T0?mute=1&autoplay=1&loop=1&playlist=reKhCSHl3T0" frameborder="0" allowfullscreen style="margin-left: 130px;"></iframe>
+                     -->
+                    <img src="projectImages/BiQu_chicken_head2.gif" alt="" style="margin-left: 130px;" width="380px">
+                </div>
+                <div class="col-sm-6 wow fadeInRight">
+                    <h3 class="column-title">Pseudospectral Collocation</h3>
+                    <p>
+                        The library uses Gauss-Legendre pseudospectral collocation, a numerical method that approximates
+                        the solution of optimal control problems by discretizing the state and control variables at a
+                        set of collocation points, and enforcing the system dynamics and constraints at these points.
+                        The resulting nonlienar programming problem can be solved by various solvers, such as IPOPT.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 80px; margin-bottom: 30px;">
+                <div class="col-sm-6 wow fadeInRight">
+                    <h3 class="column-title">Solver for Arbitrary Robots</h3>
+                    <p>
+                        Galileo is built on top of Casadi and Pinocchio, two powerful frameworks for algorithmic
+                        differentiation and rigid body dynamics, respectively. Casadi provides the symbolic expressions
+                        and automatic differentiation capabilities for the collocation method, while Pinocchio provides
+                        the kinematics and dynamics models for the system. Used in tandem, Galileo can solve optimal
+                        control problems for arbitrary robots, including the Atlas humanoid robot from Boston Dynamics,
+                        and the Unitree Go1 quadruped with a custom arm.
+
+                        The library is designed to be extensible and modular, allowing users to define their own system
+                        models, cost functions, constraints, and collocation schemes. The library also provides some
+                        examples of optimal control problems, such as control of the Van der Pol oscillator, double
+                        mass-spring damper
+                        system, and multiple legged robot examples.
+                    </p>
+                </div>
+                <div class="col-sm-6 wow fadeInLeft">
+                    <!-- <iframe width="373" height="257" src="https://www.youtube.com/embed/reKhCSHl3T0?mute=1&autoplay=1&loop=1&playlist=reKhCSHl3T0" frameborder="0" allowfullscreen style="margin-left: 130px;"></iframe>
+                     -->
+                    <img src="projectImages/huronTurbo.gif" alt="" style="margin-left: 130px;" width="380px">
+                </div>
+            </div>
+
+            <!-- <div class="row" style="margin-top: 80px; margin-bottom: 30px;">
+                <div class="col-sm-6 wow fadeInLeft">
+                  <img src="projectImages/outreach.jpeg" alt="" style="margin-left: 130px;" width="380px">
+             </div>
+                <div class="col-sm-6 wow fadeInRight">
+                    <h3 class="column-title">Outreach</h3>
+                    <p>
+                        We would like to extend our gratitude to MathAltitude for the incredible opportunity to host a group of enthusiastic students on a remarkable lab tour at WPI campus. Their genuine enthusiasm and keen interest in our work left a lasting impression on our team. The students raised a lot of interesting questions and ideas during the visit, wowing our team with their potentials and vision. We are immensely thankful for MathAltitude's support and partnership, and we eagerly look forward to continuing our academic journey together.
+                    </p>
+                </div>
+                
+            </div> -->
+
+
+
+            <footer id="footer" style="margin-top: 50px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p class="text-center">
+                                &copy; 2024 ALMaS Designed and Developed by <a target="_blank"
+                                    href="http://themeinthebox.com"
+                                    title="Free Twitter Bootstrap WordPress Themes and HTML templates">themeinthebox.com</a>
+                            </p>
+
+                            <ul class="social-icons text-center">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer><!--/#footer-->
+
+            <script src="js/jquery.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/owl.carousel.min.js"></script>
+            <script src="js/mousescroll.js"></script>
+            <script src="js/jquery.prettyPhoto.js"></script>
+            <script src="js/jquery.isotope.min.js"></script>
+            <script src="js/jquery.inview.min.js"></script>
+            <script src="js/wow.min.js"></script>
+            <script src="js/main.js"></script>
+</body>
+
+</html>
