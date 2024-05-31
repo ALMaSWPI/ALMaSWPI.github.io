@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -63,31 +63,88 @@
                         </ul>
                     </div>
                 </nav>
-                <!-- <nav class="collapse navbar-collapse navbar-right" role="navigation">
-                    <div>
-                        <ul id="nav" class="nav navbar-nav">
-                            <li class="scroll"><a href="#home" data-section="#home">Home</a></li>
-                            <li class="scroll"><a href="#about" data-section="#about">About</a></li>
-                            <li><a href="https://users.wpi.edu/~mmaghelih/BiQu.html">BiQu</a></li>
-                            <li><a href="https://users.wpi.edu/~mmaghelih/HURON/HURON.html">HURON</a></li>
-                            <li><a href="https://github.com/echandler5956f/Galileo">Galileo</a></li>
-                            <li class="scroll"><a href="#sponsors" data-section="#sponsors">Sponsors</a></li>
-                        </ul>
-                    </div>
-                </nav> -->
-                <!-- /main nav -->
                 
             </div>
         </header>
 
-    <iframe src="https://almaswpi.github.io/hero_website/" width="100%" height="1000px" frameborder="0"></iframe>
+    <section id="about">
+        <div class="container">
+		
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">HERO (Humanoid Exploratory Robot)</h2>
+            </div>
 
-    <footer id="footer">
+            <div class="row">
+                <div class="col-sm-6 wow fadeInRight">
+                    <h3 class="column-title">Overview</h3>
+                    <p>
+                        Humanoid robots has been present in humankind's imagination for a long time. Nowadays, with the rapid development of science and technology, humanoid robots are becoming reality. Humanoid robotics is currently among the most active branches of robotics research. The potential applications of humanoid robots are infinite: searching and rescuing in catastrophic incidents, working in toxic environments, entertainment, education, and more. Besides that, humanoid robotics research push the boundary of human knowledge in many fields, such as biomechanics, mechanical design, computation, and control.
+                    </p>
+                    <p>
+                        The HERO project aims to create a full-scale, full-body humanoid robot with two main values in mind:
+                    </p>
+                    <ul>
+                        <li>Building a stable and fully-functional platform for education and research in humanoid robotics.              
+                        </li>
+                        <li>
+                            Providing cost-effective and durable solutions for large-scale tasks such as disaster relief around the world.
+                        </li>
+                    </ul>
+                    <p>Within this project, we have active research in a variety of fields, including control theory, effective mechanical design, and sensors.</p>
+                </div>
+                <div class="col-sm-6 wow fadeInLeft">
+                       <img src="projectImages/hero_overview.png" alt="" width="420px"  style="margin-left: 100px;">
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 80px; margin-bottom: 30px;">
+                
+                <div class="col-sm-6 wow fadeInLeft">
+                     <img src="projectImages/hero_v2.png" alt="" style="margin-left: 130px;" width="380px">
+                </div>
+                <div class="col-sm-6 wow fadeInRight">
+                    <h3 class="column-title">Ongoing research</h3>
+                    <p>
+                        <b>Developing a full-body human-like robot:</b> We have been continuously developing a humanoid robot that resembles human anatomy, is cost-effective, and can serve as a solid platform for applying advanced control algorithms.
+                        Currently, we are designing the 3rd version of the ankle joint with the core being the four-bar mechanism and the use of harmonic drives. The goal of this version is to closer match the human leg shape and reduce the cost of materials.
+                    </p>
+                    <p>
+                        <b>Standing push recovery: </b>
+                        The standing push recovery problem occurs when a robot in standing position needs to resist external disturbance without falling down. We propose a new controller based on momentum concepts and a new reaching law for sliding mode control that can help the robot withstand higher forces while standing.
+                    </p>
+                    <button class="btn btn-primary" onclick="document.getElementById('hiddenPara2').style.display = (document.getElementById('hiddenPara2').style.display === 'none') ? 'block' : 'none'">
+                        Read more</button>
+                </div>
+            </div>
+            <div class="row" id="hiddenPara2" style="display: none;">
+                <div class="col-sm-6 wow fadeInLeft">
+                </div>
+                <div class="col-sm-6 wow fadeInRight">
+                    <p>The lower body of the HURON humanoid stands about 47 inches (1.2 m) with the weight about 88 lbs (40 kg). For perception, the robot has 8 Force Sensitive Resistor (FSR) sensors at the bottom of its feet. Each limb contains 6 degrees of freedom to represent human anatomy. The robot features high-power BLDC motors and high-ratio strain wave gearboxes. The upper-body part of the robot is currently in development.</p>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 80px; margin-bottom: 30px;">
+                <div class="col-sm-6 wow fadeInRight">
+                    <h3 class="column-title">Future goals</h3>
+                    <p>
+                        <b>Stepping push recovery:</b> A standing humanoid robot can only withstand a range of external disturbance such that two feet stay flat on the ground. If forces are outside this range, the robot can no longer stand stably. Similar to how human react to forces, the robot needs to take a step to be balanced. This problem is called the stepping push recovery.
+                    </p>
+                    <p>
+                        <b>Walking on uneven terrain/complex environment:</b> Uneven terrain poses a great challenge for humanoid robots to walk through stably. However, as flat and clean terrain is rare in the real world, humanoid robots need to overcome this problem to be practical.
+                    </p>
+                </div>
+                <div class="col-sm-6 wow fadeInLeft">
+                     <img src="projectImages/hero_robot.png" alt="" style="margin-left: 175px;" width="250px">
+                </div>
+            </div>
+
+    <footer id="footer" style="margin-top: 50px;">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
                     <p class="text-center">
-                        &copy; 2024 HERO. Designed and Developed by <a target="_blank" href="http://themeinthebox.com" title="Free Twitter Bootstrap WordPress Themes and HTML templates">themeinthebox.com</a>
+                        &copy; 2024 ALMaS Designed and Developed by <a target="_blank" href="http://themeinthebox.com" title="Free Twitter Bootstrap WordPress Themes and HTML templates">themeinthebox.com</a>
                     </p>
                     
                     <ul class="social-icons text-center">
