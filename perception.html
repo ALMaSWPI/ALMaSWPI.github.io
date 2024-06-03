@@ -88,34 +88,10 @@
                     <img src="projectImages/biqu24.png" alt="" style="margin-left: 130px;" width="380px">
                 </div>
                 <div class="col-sm-6 wow fadeInRight">
-                    <h3 class="column-title">Key Components and Process</h3>
-                    <ul>
-                        <li><strong>Perception System:</strong>
-                            <ul>
-                                <li><strong>Depth Camera:</strong> The RealSense D435i depth camera captures depth information and generates 3D point clouds of the surroundings.</li>
-                                <li><strong>Point Cloud Analysis:</strong> The point cloud data is processed to identify and segment step-able regions in the environment. This segmentation ensures that the robot only steps on valid, safe areas, avoiding obstacles and hazardous zones.</li>
-                                <li><strong>Elevation Mapping:</strong> Implementing elevation mapping algorithms, the robot constructs a 3D map of the terrain, identifying various elevations and surfaces it can step on.</li>
-                            </ul>
-                        </li>
-                        <li><strong>Control System:</strong>
-                            <ul>
-                                <li><strong>Model Predictive Control (MPC):</strong> The control system uses the segmented perception data to generate safe trajectories. MPC helps in planning the robot's movements over a receding horizon, adjusting the robot's steps in real-time based on the current perception data.</li>
-                                <li><strong>Whole-Body Control (WBC):</strong> The WBC system operates at a higher frequency to follow the trajectories planned by the MPC. It ensures that the robot's joints and body movements are synchronized for stable locomotion.</li>
-                            </ul>
-                        </li>
-                        <li><strong>Integration and Testing:</strong>
-                            <ul>
-                                <li><strong>Simulation Environment:</strong> Initial testing was conducted in a simulation environment using ROS Neotic and Gazebo. This setup allowed for thorough testing and refinement of the perceptive locomotion algorithms before deploying them on the physical robot.</li>
-                                <li><strong>Real-World Deployment:</strong> After successful simulations, the perceptive locomotion framework was deployed on the actual Unitree Go1 robot. Various experiments demonstrated the robot's ability to navigate complex terrains, such as climbing stairs and avoiding obstacles, using the enhanced perception system.</li>
-                            </ul>
-                        </li>
-                        <li><strong>Challenges and Future Work:</strong>
-                            <ul>
-                                <li><strong>Map Drifting Issues:</strong> One of the significant challenges faced was map drifting due to the limited field of view of the single mounted camera. This issue can be mitigated by adding more cameras around the robot's body to provide comprehensive environmental coverage.</li>
-                                <li><strong>Integration with Galileo:</strong> Future work involves integrating the perception system with the Galileo motion planning solver to improve computational efficiency and real-time responsiveness.</li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <h3 class="column-title">Key Components</h3>
+                    <p>
+                        The perception system uses the RealSense D435i depth camera to capture depth information and generate 3D point clouds. This data is processed to identify step-able regions and construct a 3D map of the terrain. The control system, with Model Predictive Control (MPC) and Whole-Body Control (WBC), plans and executes safe trajectories in real-time.
+                    </p>
                 </div>
             </div>
 
@@ -123,7 +99,7 @@
                 <div class="col-sm-6 wow fadeInRight">
                     <h3 class="column-title">Importance and Applications</h3>
                     <p>
-                        Perceptive locomotion significantly enhances the safety and efficiency of robotic movements in complex environments, making it a crucial capability for various applications, including logistics, construction, and planetary exploration.
+                        Perceptive locomotion significantly enhances the safety and efficiency of robotic movements in complex environments. This capability is crucial for applications in logistics, construction, and planetary exploration.
                     </p>
                 </div>
                 <div class="col-sm-6 wow fadeInLeft">
