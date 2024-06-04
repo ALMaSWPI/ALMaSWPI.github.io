@@ -169,6 +169,15 @@ ul.nostyle i {
   display: inline-block;
  
 }
+
+
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+
+
 #top-header {
   padding: 10px 0;
 }
