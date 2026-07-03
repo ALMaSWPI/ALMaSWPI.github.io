@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Advisor page for ALMaS Research Group at WPI">
+    <meta name="description" content="Advisor page for the ALMaS Group at WPI">
     <meta name="author" content="">
     <title>Advisor | ALMaS</title>
 
@@ -42,7 +43,7 @@
             <div>
                 <ul id="nav" class="nav navbar-nav">
                     <li class="scroll"><a href="index.html">Home</a></li>
-                    <li class="scroll"><a href="index.html#about">About</a></li>
+                    <li class="scroll"><a href="about.html">About</a></li>
                     <li><a href="research.html">Projects</a></li>
                     <li><a href="people.html">People</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -53,146 +54,132 @@
     </div>
 </header>
 
-<section id="about">
+<section id="about" class="almas-profile-page">
     <div class="container">
 
         <div class="section-header">
             <h2 class="section-title text-center wow fadeInDown">
-                Mohammad Mahdi Agheli Hajiabadi
+                Mahdi Agheli
             </h2>
             <p class="text-center">
                 Associate Teaching Professor<br>
-                Robotics Engineering & Mechanical Engineering<br>
+                Robotics Engineering Department<br>
                 Worcester Polytechnic Institute
             </p>
         </div>
 
         <!-- ABOUT -->
-        <div class="row">
-            <div class="col-sm-6 wow fadeInRight">
+        <div class="row almas-profile-hero">
+            <div class="col-sm-7 almas-profile-copy wow fadeInRight">
                 <h3 class="column-title">About</h3>
                 <p>
                     I am an Associate Teaching Professor in the Robotics Engineering Department
                     at Worcester Polytechnic Institute (WPI), with a joint appointment in
                     Mechanical Engineering. I lead the Autonomous Loco-Manipulation Systems
-                    (ALMaS) research group.
+                    (ALMaS) Group.
                 </p>
                 <p>
-                    My teaching and research focus on robotics, dynamics, and control, with a
-                    strong emphasis on project-based learning and the tight integration of
-                    theory, experimentation, and real robotic systems.
+                    My research focuses on legged robotics, construction robotics, mobile
+                    manipulation, robotic 3D printing, and autonomous robotic systems for
+                    construction and manufacturing applications. I am also interested in
+                    digital twins and digital manufacturing, especially where physical robotic
+                    systems connect with data-driven models and digital workflows. My teaching
+                    focuses on robotics, dynamics, and control, with an emphasis on
+                    project-based learning and the tight integration of theory,
+                    experimentation, and real robotic systems.
                 </p>
-                <p>
-                    <strong>Office:</strong> Unity Hall 285<br>
-                    <strong>Email:</strong> mmaghelih@wpi.edu
-                </p>
+
+                <div class="almas-education">
+                    <h4>Education</h4>
+                    <ul>
+                        <li><strong>Ph.D.</strong> Mechanical Engineering, Worcester Polytechnic Institute, 2013</li>
+                        <li><strong>M.S.</strong> Mechanical Engineering, Tarbiat Modares University, 2009</li>
+                        <li><strong>B.S.</strong> Mechanical Engineering, Isfahan University of Technology, 2006</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="col-sm-6 wow fadeInLeft">
-                <!-- Advisor photo placeholder -->
-                <img src="projectImages/placeholder_profile.jpg"
-                     alt="Advisor photo placeholder"
-                     style="margin-left: 150px;"
-                     width="220px">
-            </div>
-        </div>
-
-        <!-- TEACHING -->
-        <div class="row" style="margin-top: 80px; margin-bottom: 30px;">
-            <div class="col-sm-6 wow fadeInRight">
-                <h3 class="column-title">Teaching</h3>
-                <p>
-                    I teach undergraduate and graduate courses in robotics, kinematics,
-                    dynamics, and control systems. My teaching philosophy emphasizes deep
-                    conceptual understanding, critical thinking, and applying fundamentals
-                    to real-world robotic platforms.
-                </p>
-                <p><strong>Courses include:</strong></p>
-                <ul>
-                    <li>[RBE course number & title]</li>
-                    <li>[RBE / ME course number & title]</li>
-                    <li>[Graduate robotics course]</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- RESEARCH -->
-        <div class="row" style="margin-top: 80px; margin-bottom: 30px;">
-            <div class="col-sm-6 wow fadeInRight">
-                <h3 class="column-title">Research</h3>
-                <p>
-                    My research interests include legged robots, wheeled and mobile robots,
-                    soft and hybrid robotic systems, and autonomous robotic platforms for
-                    construction and manufacturing applications.
-                </p>
-                <p>
-                    Current work within the ALMaS group focuses on mobile manipulation,
-                    robotic 3D printing, autonomous construction systems, and the interaction
-                    between mechanical design, materials, and autonomy.
-                </p>
+            <div class="col-sm-5 almas-profile-portrait-col wow fadeInLeft">
+                <div class="almas-profile-photo">
+                    <img src="profileImages/ProfAgheli-1.jpg"
+                         alt="Prof. Mahdi Agheli">
+                </div>
+                <div class="almas-profile-meta">
+                    <dl>
+                        <div>
+                            <dt>Office</dt>
+                            <dd>Unity Hall 285</dd>
+                        </div>
+                        <div>
+                            <dt>Email</dt>
+                            <dd><a href="mailto:mmaghelih@wpi.edu">mmaghelih@wpi.edu</a></dd>
+                        </div>
+                    </dl>
+                </div>
             </div>
         </div>
 
-        <!-- NEWS -->
-        <div class="row" style="margin-top: 80px; margin-bottom: 30px;">
-            <div class="col-sm-8 wow fadeInRight">
-                <h3 class="column-title">News</h3>
-
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <i class="fa fa-newspaper-o"></i>
-                        <strong>Jan 2026</strong> — I launched a new mobile construction
-                        robotics research effort within the ALMaS group.
-                    </li>
-                    <li class="list-group-item">
-                        <i class="fa fa-newspaper-o"></i>
-                        <strong>Sep 2025</strong> — I introduced new undergraduate and graduate
-                        robotics courses in the RBE department.
-                    </li>
-                    <li class="list-group-item">
-                        <i class="fa fa-newspaper-o"></i>
-                        <strong>May 2025</strong> — I advised and showcased multiple
-                        student-led MQP projects at WPI.
-                    </li>
+        <!-- COURSES -->
+        <div class="row almas-profile-courses">
+            <div class="col-sm-12 wow fadeInRight">
+                <h3 class="column-title">Courses</h3>
+                <ul class="almas-course-list">
+                    <li><strong>RBE 3001:</strong> Robot Manipulation</li>
+                    <li><strong>RBE 4815:</strong> Industrial Robotics</li>
+                    <li><strong>ES 3011:</strong> Controls Engineering</li>
+                    <li><strong>RBE 500:</strong> Foundations of Robotics</li>
+                    <li><strong>RBE 501:</strong> Robot Dynamics</li>
+                    <li><strong>RBE 521:</strong> Legged Robotics</li>
                 </ul>
             </div>
         </div>
 
         <!-- PUBLICATIONS -->
-        <div class="row" style="margin-top: 80px; margin-bottom: 30px;">
-            <div class="col-sm-10 wow fadeInRight">
+        <div class="row almas-profile-publications">
+            <div class="col-sm-12 wow fadeInRight">
                 <h3 class="column-title">Selected Publications</h3>
 
-                <ol>
+                <ol class="almas-publication-list">
                     <li>
-                        M. M. Agheli Hajiabadi, et al.,
-                        “Title of publication placeholder,”
-                        <em>IEEE Conference / Journal Name</em>, Year.
-                        <br>
-                        <a href="#" target="_blank">
-                            <i class="fa fa-external-link"></i> PDF / DOI
-                        </a>
+                        <div class="almas-publication-year">2026</div>
+                        <div>
+                            <strong>Jared Morgan and Mahdi Agheli</strong>
+                            <span>“Trajectory Optimization through Mixed-Integer Optimization of
+                            Contact Dynamics for Switching End Effector Locomotion,”</span>
+                            <em>IEEE International Conference on Robotics and Automation
+                            (ICRA)</em>. Accepted for presentation.
+                        </div>
                     </li>
 
-                    <li style="margin-top: 10px;">
-                        M. M. Agheli Hajiabadi, et al.,
-                        “Title of publication placeholder,”
-                        <em>ASME / Robotics Conference</em>, Year.
-                        <br>
-                        <a href="#" target="_blank">
-                            <i class="fa fa-external-link"></i> PDF / DOI
-                        </a>
+                    <li>
+                        <div class="almas-publication-year">2025</div>
+                        <div>
+                            <strong>Mahdi Agheli, Gregory C. Lewin, Andre Rosendo, and Vincent A. Aloi</strong>
+                            <span>“Bridging the Gap: A Project-Based Approach to Robotics Programming
+                            for First-Year Robotics Engineering Students,”</span>
+                            <em>2025 ASEE Annual Conference &amp; Exposition</em>.
+                            <a href="https://nemo.asee.org/public/conferences/365/papers/47613/view" target="_blank">
+                                <i class="fa fa-external-link"></i> View paper
+                            </a>
+                        </div>
                     </li>
 
-                    <li style="margin-top: 10px;">
-                        M. M. Agheli Hajiabadi, et al.,
-                        “Title of publication placeholder,”
-                        <em>Journal / Conference</em>, Year.
+                    <li>
+                        <div class="almas-publication-year">2024</div>
+                        <div>
+                            <strong>Ibrahim Al-Tameemi, Duc Doan, Abizer Patanwala, and Mahdi Agheli</strong>
+                            <span>“Momentum-Based Push Recovery Control of Bipedal Robots Using a
+                            New Variable Power Reaching Law for Sliding Mode Control,”</span>
+                            <em>Journal of Robotics and Control</em>, vol. 5, no. 5.
+                            <a href="https://journal.umy.ac.id/index.php/jrc/article/view/23379" target="_blank">
+                                <i class="fa fa-external-link"></i> View paper
+                            </a>
+                        </div>
                     </li>
                 </ol>
 
-                <p style="margin-top: 15px;">
-                    <a href="https://scholar.google.com" target="_blank">
+                <p class="almas-scholar-link">
+                    <a class="btn btn-primary" href="https://scholar.google.com/citations?hl=en&oi=ao&user=HVr4BUAAAAAJ" target="_blank">
                         <i class="fa fa-graduation-cap"></i>
                         View my full publication list on Google Scholar
                     </a>
@@ -208,7 +195,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <p class="text-center">
-                    &copy; 2024 ALMaS Designed and Developed by
+                    &copy; 2026 ALMaS Group. Designed and Developed by
                     <a target="_blank" href="http://themeinthebox.com">
                         themeinthebox.com
                     </a>

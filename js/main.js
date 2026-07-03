@@ -49,6 +49,71 @@ jQuery(function($) {'use strict';
 
 	//Slider
 	$(document).ready(function() {
+		var currentPage = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
+		var projectPages = [
+			'research.html',
+			'artu.html',
+			'biqu.html',
+			'galileo.html',
+			'hero.html',
+			'perception.html',
+			'primo.html'
+		];
+		var peoplePages = [
+			'people.html',
+			'mahdi.html'
+		];
+		var activeHref = currentPage;
+
+		if (projectPages.indexOf(currentPage) !== -1) {
+			activeHref = 'research.html';
+		} else if (peoplePages.indexOf(currentPage) !== -1) {
+			activeHref = 'people.html';
+		}
+
+		$('#top-header .navbar-nav li').removeClass('active');
+		$('#top-header .navbar-nav a').each(function(){
+			var href = ($(this).attr('href') || '').split('#')[0].toLowerCase();
+			if (!href && activeHref === 'index.html') {
+				href = 'index.html';
+			}
+			if (href === activeHref) {
+				$(this).parent('li').addClass('active');
+			}
+		});
+
+		function refreshReveals(){
+			var revealItems = document.querySelectorAll('.almas-reveal');
+			if (!revealItems.length) return;
+			document.body.classList.add('reveal-ready');
+
+			if (!('IntersectionObserver' in window)) {
+				$(revealItems).addClass('is-visible');
+				return;
+			}
+
+			if (!window.ALMaSRevealObserver) {
+				window.ALMaSRevealObserver = new IntersectionObserver(function(entries){
+					entries.forEach(function(entry){
+						if (entry.isIntersecting) {
+							entry.target.classList.add('is-visible');
+							window.ALMaSRevealObserver.unobserve(entry.target);
+						}
+					});
+				}, { threshold: 0.16, rootMargin: '0px 0px -40px 0px' });
+			}
+
+			[].forEach.call(revealItems, function(item){
+				if (!item.classList.contains('is-visible')) {
+					window.ALMaSRevealObserver.observe(item);
+				}
+			});
+		}
+
+		window.ALMaSRefreshReveals = refreshReveals;
+		refreshReveals();
+		$(window).on('load', refreshReveals);
+
 		var time = 7; // time in seconds
 
 	 	var $progressBar,
@@ -131,8 +196,83 @@ jQuery(function($) {'use strict';
 	    }
 	});
 
+	function setPeopleCardAnimations(){
+		var page = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
+		if (page !== 'people.html') return;
+
+		var cards = $('#services .row > [class*="col-"], #services .features > [class*="col-"]');
+		if (!cards.length) return;
+
+		cards
+			.removeClass('wow fadeInUp animated')
+			.addClass('almas-reveal')
+			.css({
+				visibility: '',
+				'animation-name': '',
+				'animation-duration': '',
+				'animation-delay': ''
+			});
+
+		function applyRowDelays(){
+			var rows = [];
+			cards.each(function(){
+				var card = this;
+				var top = Math.round(card.getBoundingClientRect().top + window.pageYOffset);
+				var row = rows.filter(function(item){
+					return Math.abs(item.top - top) < 24;
+				})[0];
+
+				if (!row) {
+					row = { top: top, cards: [] };
+					rows.push(row);
+				}
+				row.cards.push(card);
+			});
+
+			rows.sort(function(a, b){ return a.top - b.top; });
+			rows.forEach(function(row, rowIndex){
+				row.cards
+					.sort(function(a, b){
+						return a.getBoundingClientRect().left - b.getBoundingClientRect().left;
+					})
+					.forEach(function(card, index){
+						card.style.transitionDelay = Math.min((index % 4) * 110, 330) + 'ms';
+					});
+			});
+		}
+
+		applyRowDelays();
+		$(window).on('load resize', applyRowDelays);
+		cards.removeClass('is-visible');
+		document.body.classList.add('reveal-ready');
+		window.requestAnimationFrame(function(){
+			window.requestAnimationFrame(function(){
+				if (window.ALMaSRefreshReveals) window.ALMaSRefreshReveals();
+			});
+		});
+	}
+	setPeopleCardAnimations();
+
 	//Initiat WOW JS
 	new WOW().init();
+
+	// Keep embedded videos visible and usable even when old scroll animations
+	// do not fire before the iframe loads.
+	function revealVideoEmbeds(){
+		$('iframe[src*="youtube.com"]').each(function(){
+			$(this)
+				.attr('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share')
+				.attr('allowfullscreen', 'allowfullscreen')
+				.css('visibility', 'visible');
+			$(this).closest('.wow')
+				.css({ visibility: 'visible', 'animation-name': 'fadeInLeft' })
+				.addClass('animated');
+		});
+	}
+	revealVideoEmbeds();
+	setTimeout(revealVideoEmbeds, 500);
+	$(window).on('load scroll', revealVideoEmbeds);
+
 	//smoothScroll
 	smoothScroll.init();
 

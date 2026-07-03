@@ -1,3 +1,7 @@
 *.DS_Store
 almas-logo/
 videos/
+!Videos/
+!Videos/*.mov
+!Videos/*.mp4
+node_modules/

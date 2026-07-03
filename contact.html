@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -55,7 +56,7 @@
                     <div>
                         <ul id="nav" class="nav navbar-nav">
                             <li class="scroll"><a href="index.html" data-section="#home">Home</a></li>
-                            <li class="scroll"><a href="index.html#about" data-section="#about">About</a></li>
+                            <li class="scroll"><a href="about.html" data-section="#about">About</a></li>
                             <li><a href="research.html">Projects</a></li>
                             <li><a href="people.html">People</a></li>
                             <li><a href="contact.html">Contact</a></li>
@@ -67,7 +68,7 @@
                     <div>
                         <ul id="nav" class="nav navbar-nav">
                             <li class="scroll"><a href="#home" data-section="#home">Home</a></li>
-                            <li class="scroll"><a href="#about" data-section="#about">About</a></li>
+                            <li class="scroll"><a href="about.html">About</a></li>
                             <li><a href="https://users.wpi.edu/~mmaghelih/BiQu.html">BiQu</a></li>
                             <li><a href="https://users.wpi.edu/~mmaghelih/HURON/HURON.html">HURON</a></li>
                             <li><a href="https://github.com/echandler5956f/Galileo">Galileo</a></li>
@@ -82,101 +83,38 @@
 
         <section id="contact-area">
             <div class="container">
-                <div class="row">
-                    <div class="section-header">
-                        <h2 class="section-title text-center wow fadeInDown animated" style="visibility: visible;">Contact Information</h2>
-      <!--                  <p class="text-center wow fadeInDown animated" style="visibility: visible;"><strong>Director:</strong></p> -->
-                        <p class="text-center wow fadeInDown animated" style="visibility: visible;">Prof. Mahdi Agheli</p>     
-        <!--                <p class="text-center wow fadeInDown animated" style="visibility: visible;">mmaghelih@wpi.edu</p>    -->
-                        <p class="text-center wow fadeInDown animated" style="visibility: visible;"><strong>Address: </strong></p>
-                        <p class="text-center wow fadeInDown animated" style="visibility: visible;">27 Boynton Street, Worcester Polytechnic Institute</p>
-                        <p class="text-center wow fadeInDown animated" style="visibility: visible;">Worcester, MA 01609</p>
-                        <p class="text-center wow fadeInDown animated" style="visibility: visible;">United States</p>
-                    </div>
+                <div class="section-header">
+                    <h2 class="section-title text-center wow fadeInDown animated" style="visibility: visible;">Contact</h2>
+                    <p class="text-center wow fadeInDown animated" style="visibility: visible;">For research collaborations, student opportunities, or course-related questions, please contact Prof. Mahdi Agheli directly.</p>
+                </div>
 
-                    <div class="section-header">
-                        <h2 class="section-title text-center wow fadeInDown animated" style="visibility: visible;">Send Message</h2>
-                        <p class="text-center wow fadeInDown animated" style="visibility: visible;">If you are interested in working with us, please use the following form to send us a message.</p>
-                    </div>
-                    <!-- <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
-                        <div class="col-lg-6 animated animate-from-left" style="opacity: 1; left: 0px;">
-    
-                            <div class="form-group">
-                                    <label for="name">Your Name (Required)</label>
-                                    <input id="name" type="text" name="name" class="form-control" placeholder="Name" required>
+                <div class="row contact-layout">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="contact-card">
+                            <div class="contact-person">
+                                <h3>Prof. Mahdi Agheli</h3>
+                                <p>Associate Teaching Professor</p>
+
+                                <div class="contact-detail">
+                                    <i class="fa fa-envelope"></i>
+                                    <a href="mailto:mmaghelih@wpi.edu">mmaghelih@wpi.edu</a>
                                 </div>
-                            <div class="form-group">
-                                    <label for="email">Email Address</label>
-                                    <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
+
+                                <div class="contact-detail">
+                                    <i class="fa fa-map-marker"></i>
+                                    <span>27 Boynton Street<br>Worcester, MA 01609</span>
                                 </div>
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
                             </div>
-    
-                        </div>
-                        <div class="col-lg-6 animated animate-from-right" style="opacity: 1; right: 0px;">
-                            <div class="form-group">
-                                <label for="message">Your Message</label>
-                                <textarea name="message" id="message" class="form-control" rows="8" placeholder="Message" required></textarea>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="text-center">
-    
-                              <button type="submit" class="btn btn-primary btn-lg btn-send-msg">Send Message</button>
-    
-                        </div>
-    
-                    </form> -->
 
-                    <!-- <form
-                        action="https://formspree.io/f/mgegzrqj"
-                        method="POST"
-                        >
-                        <label>
-                            Your email:
-                            <input type="email" name="email">
-                        </label>
-                        <label>
-                            Your message:
-                            <textarea name="message"></textarea>
-                        </label>
-                        <button type="submit">Send</button>
-                    </form> -->
-
-                    <form id="main-contact-form" name="contact-form" method="post" action="https://formspree.io/f/mdoqlygj">
-                        <div class="col-lg-6 animated animate-from-left" style="opacity: 1; left: 0px;">
-                    
-                            <div class="form-group">
-                                <label for="name">Your Name (Required)</label>
-                                <input id="name" type="text" name="name" class="form-control" placeholder="Name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email Address</label>
-                                <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
+                            <div class="contact-actions">
+                                <a class="btn btn-primary" href="mailto:mmaghelih@wpi.edu">
+                                    <i class="fa fa-envelope"></i> Email
+                                </a>
                             </div>
                         </div>
-                    
-                        <div class="col-lg-6 animated animate-from-right" style="opacity: 1; right: 0px;">
-                            <div class="form-group">
-                                <label for="message">Your Message</label>
-                                <textarea name="message" id="message" class="form-control" rows="8" placeholder="Message" required></textarea>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary btn-lg btn-send-msg">Send Message</button>
-                        </div>
-                    </form>
-    
+                    </div>
                 </div>
             </div>
-                    
         </section><!--/#bottom-->
     
     <footer id="footer">
@@ -184,7 +122,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <p class="text-center">
-                        &copy; 2024 ALMaS. Designed and Developed by <a target="_blank" href="http://themeinthebox.com" title="Free Twitter Bootstrap WordPress Themes and HTML templates">themeinthebox.com</a>
+                        &copy; 2026 ALMaS Group. Designed and Developed by <a target="_blank" href="http://themeinthebox.com" title="Free Twitter Bootstrap WordPress Themes and HTML templates">themeinthebox.com</a>
                     </p>
                     
                     <ul class="social-icons text-center">

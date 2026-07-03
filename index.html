@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -55,7 +56,7 @@
                     <div>
                         <ul id="nav" class="nav navbar-nav">
                             <li class="scroll"><a href="#home" data-section="#home">Home</a></li>
-                            <li class="scroll"><a href="#about" data-section="#about">About</a></li>
+                            <li class="scroll"><a href="about.html">About</a></li>
                             <li><a href="research.html">Projects</a></li>
                             <li><a href="people.html">People</a></li>
                             <li><a href="contact.html">Contact</a></li>
@@ -68,127 +69,113 @@
             </div>
         </header>
 
-    <section id="main-slider">
-		<div class="owl-carousel">
-			<div class="item" style="background-image: url(projectImages/primo.jpg);">
-                <div class="slider-inner">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="carousel-content text-left"  style="margin-top: 0px;">
-                                    <h2><span>PRIMO</span></h2>
-                                    <p><font color="white">WPI's Mobile 3D Printer for Large-Scale Construction.</font></p>
-                                    <a class="btn btn-primary btn-lg" href="primo.html">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/.item-->
-			<div class="item" style="background-image: url(projectImages/rebar.jpg);">
-                <div class="slider-inner">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="carousel-content text-left"  style="margin-top: 0px;">
-                                    <!-- <h2><span>RebarTying</span></h2> -->
-									<h2><span style="color: lightblue;">RebarTying</span></h2>
-                                    <p><font color="white">WPI's Autonomous Rebar Tying Robot.</font></p>
-                                    <a class="btn btn-primary btn-lg" href="artu.html">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/.item-->
-     <!--    <div class="owl-carousel"> -->
-            <div class="item" style="background-image: url(projectImages/go1_3.jpeg);">
-                <div class="slider-inner">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="carousel-content text-right"  style="margin-top: 0px;">
-                                    <h2><span>BiQu</span></h2>
-                                    <p><font color="black">A Long-Standing WPI Project on Quadrupedal Locomotion.</font></p>
-                                    <a class="btn btn-primary btn-lg" href="biqu.html">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/.item-->
-            <div class="item" style="background-image: url(projectImages/huron2.png);">
-                <div class="slider-inner">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="carousel-content text-center" style="margin-top: -50px;">
-                                    <h2><span>HERO</span></h2>
-                                    <p><font color="black">WPI'S Custom-Built Humanoid Exploring New Horizons</font></p>
-                                    <a class="btn btn-primary btn-lg" href="hero.html">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/.item-->
-            <div class="item" style="background-image: url(projectImages/galileo.png);">
-                <div class="slider-inner">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="carousel-content text-center" style="margin-top: -50px;">
-                                    <h2><span>Galileo</span></h2>
-                                    <p><font color="black">WPI's In-House Psueodspectral Collocation Solver for Hybrid Systems</font></p>
-                                    <a class="btn btn-primary btn-lg" href="galileo.html">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/.item-->
-            
-        </div><!--/.owl-carousel-->
-    </section><!--/#main-slider-->
-
-    <section id="about">
+    <section id="almas-hero">
+        <video class="almas-hero-bg-video" autoplay muted playsinline preload="auto">
+            <source src="Videos/1.mov">
+        </video>
         <div class="container">
-
-            <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">A<span style="text-transform: lowercase;">utonomous</span> L<span style="text-transform: lowercase;">oco</span>-M<span style="text-transform: lowercase;">anipulation</span> S<span style="text-transform: lowercase;">ystems</span> (ALM<span style="text-transform: lowercase;">a</span>S) G<span style="text-transform: lowercase;">roup</span></h2> 
-                <p class="text-center wow fadeInDown" style="margin-top: -10px;">Worcester Polytechnic Institute</p>
-                <p class="text-center wow fadeInDown" style="margin-top: -10px;">Worcester, MA 01609</p>
-            </div>
-
+            <h1 class="almas-hero-title">Autonomous Loco-Manipulation Systems (ALMaS)</h1>
             <div class="row">
-                <div class="col-sm-6 wow fadeInRight">
-                    <h3 class="column-title">A Little More About Us</h3>
-                    <p>
-At the ALMaS (Autonomous Loco-Manipulation Systems) Group at WPI, we're pushing the boundaries of mobile manipulation. Our research combines autonomous locomotion with skilled manipulation, enabling robots to move intelligently and interact effectively with the world around them.
-
-			<p>
-
-We develop adaptable, high-performance systems that can navigate complex environments and handle delicate tasks. From industrial automation and disaster response to space exploration, our robots are designed to operate where humans can’t—or shouldn’t—go.
-
-			<p>
-
-With deep expertise in legged robotics and a growing focus on general mobile manipulation, we integrate innovative mechanical design, advanced control strategies, and machine learning to expand what autonomous robots can achieve. Our work includes novel mechanisms, sim-to-real learning, perceptive control, and the pursuit of greater agility, stability, and decision-making in the real world.
-
-			<p>
-
-We welcome collaborations with industry and academic partners, and are always looking for motivated students to join our team. To connect with us, reach out at mmaghelih@wpi.edu.
-				<p>
-		
-                    <a class="btn btn-primary" href="research.html">Discover Us</a>
-
-                </div>
-                <div class="col-sm-6 wow fadeInLeft">
-                    <img class="img-responsive" src="projectImages/go1.jpg" alt="">
-                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Jq3-2dfzq1c" frameborder="0" allowfullscreen></iframe> -->
+                <div class="col-sm-7 col-md-6">
+                    <div class="almas-hero-copy">
+                        <p class="almas-hero-text">
+                            ALMaS develops mobile robots that move with purpose, manipulate
+                            the physical world, and bring autonomy into construction,
+                            manufacturing, and field robotics.
+                        </p>
+                        <div class="almas-hero-actions">
+                            <a class="btn btn-secondary btn-lg" href="research.html">Explore Projects</a>
+                            <a class="btn btn-secondary btn-lg" href="people.html">Meet the Team</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section><!--/#about-->
+        <div class="almas-hero-video-controls" aria-label="Homepage video controls">
+            <button type="button" class="almas-video-toggle" aria-label="Pause background video" title="Pause video">
+                <i class="fa fa-pause"></i>
+            </button>
+        </div>
+        <a class="almas-hero-scroll smooth-scroll" href="#featured-projects" data-section="#featured-projects" aria-label="Scroll to featured projects" title="Scroll down">
+            <i class="fa fa-angle-down"></i>
+        </a>
+    </section>
+
+    <section id="featured-projects" class="almas-featured-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Featured Projects</h2>
+                <p class="text-center wow fadeInDown">
+                    A snapshot of current ALMaS work across construction robotics,
+                    mobile printing, legged systems, and computational tools.
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-3 almas-reveal" style="transition-delay: 0ms;">
+                    <a class="almas-project-card" href="artu.html">
+                        <img src="projectImages/rebar.jpg" alt="Autonomous rebar tying robot">
+                        <div class="almas-project-body">
+                            <h3>Rebar Tying</h3>
+                            <p>Autonomous robotic systems for safer, more consistent construction workflows.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-md-3 almas-reveal" style="transition-delay: 110ms;">
+                    <a class="almas-project-card" href="primo.html">
+                        <img src="projectImages/primo.jpg" alt="PRIMO mobile 3D printer">
+                        <div class="almas-project-body">
+                            <h3>PRIMO</h3>
+                            <p>A mobile platform exploring large-scale construction 3D printing.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-md-3 almas-reveal" style="transition-delay: 220ms;">
+                    <a class="almas-project-card" href="biqu.html">
+                        <img src="projectImages/go1_3.jpeg" alt="Quadruped robot">
+                        <div class="almas-project-body">
+                            <h3>BiQu</h3>
+                            <p>Legged locomotion and loco-manipulation research with quadruped systems.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-md-3 almas-reveal" style="transition-delay: 330ms;">
+                    <a class="almas-project-card" href="galileo.html">
+                        <img src="projectImages/galileo.png" alt="Galileo solver visualization">
+                        <div class="almas-project-body">
+                            <h3>Galileo</h3>
+                            <p>Computational tools for trajectory optimization and hybrid robotic systems.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <p class="text-center" style="margin-top: 28px;">
+                <a class="btn btn-primary" href="research.html">View All Projects</a>
+            </p>
+        </div>
+    </section>
+
+    <section id="connect" class="almas-connect-section">
+        <div class="container">
+            <div class="row almas-about-cta almas-reveal" style="transition-delay: 330ms;">
+                <div class="col-sm-8">
+                    <h3>Students, collaborators, and partners are welcome.</h3>
+                    <p>
+                        ALMaS is always interested in motivated students and collaborators
+                        working at the intersection of robotics, autonomy, and physical systems.
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <a class="btn btn-secondary" href="people.html">Meet the Team</a>
+                    <a class="btn btn-secondary" href="contact.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- <section id="sponsors">
         <div class="section-header">
@@ -208,7 +195,7 @@ We welcome collaborations with industry and academic partners, and are always lo
             <div class="row">
                 <div class="col-sm-12">
                     <p class="text-center">
-                        &copy; 2024 ALMaS Group. Designed and Developed by <a target="_blank" href="http://themeinthebox.com" title="Free Twitter Bootstrap WordPress Themes and HTML templates">themeinthebox.com</a>
+                        &copy; 2026 ALMaS Group. Designed and Developed by <a target="_blank" href="http://themeinthebox.com" title="Free Twitter Bootstrap WordPress Themes and HTML templates">themeinthebox.com</a>
                     </p>
                     
                     <ul class="social-icons text-center">
@@ -232,5 +219,7 @@ We welcome collaborations with industry and academic partners, and are always lo
     <script src="js/jquery.inview.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/hero-rotator.js"></script>
+    <script src="js/hero-video-controls.js?v=28"></script>
 </body>
 </html>
