@@ -1,0 +1,26 @@
+.ask-ai-tutor-link {
+  text-align: right;
+  padding: 2px 8px 6px;
+  display: none;
+}
+
+.jp-Cell.jp-mod-active .ask-ai-tutor-link {
+  display: block;
+}
+
+.ask-ai-tutor-link a {
+  display: inline-block;
+  color: #fff;
+  font-size: 11px;
+  text-decoration: none;
+  cursor: pointer;
+  background: #6c9eff;
+  padding: 4px 14px;
+  border-radius: 4px;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.ask-ai-tutor-link a:hover {
+  opacity: 1;
+}

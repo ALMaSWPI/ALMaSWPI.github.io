@@ -112,7 +112,9 @@
       }
     </style>
   </head>
-  <body class="jp-ThemedContainer" data-notebook="lab">
+  <body class="jp-ThemedContainer" data-notebook="lab"><link rel="stylesheet" href="../../static/css/banner.css">
+<div id="spaghettios-banner">WPI ES3011 - Control Engineering</div>
+
     <div id="jupyterlite-loading-indicator" class="hidden">
       <div class="jupyterlite-loading-indicator-spinner"></div>
       <div class="jupyterlite-loading-indicator-text">Loading JupyterLite...</div>
@@ -122,5 +124,47 @@
           JupyterLite requires JavaScript to be enabled in your browser.
       </div>
     </noscript>
-  </body>
+  <link rel="stylesheet" href="../../static/css/cell_tutor_links.css"><script>window.API_BASE="https://al-ma-swpi-github-io.vercel.app";</script>
+<link rel="stylesheet" href="../../static/css/ai_sidebar.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<div id="ai-sidebar-wrap">
+  <button id="ai-sidebar-btn" title="Ask Big Pickle">🥒</button>
+  <div id="ai-sidebar-panel">
+    <div id="ai-sidebar-head">
+      <span>Ask Big Pickle</span>
+      <button id="ai-sidebar-close">&times;</button>
+    </div>
+    <div id="ai-sidebar-msgs"></div>
+    <div id="ai-sidebar-foot">
+      <textarea id="ai-sidebar-input" rows="2" placeholder="Ask about this page..."></textarea>
+      <button id="ai-sidebar-send">Send</button>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/marked@15.0.7/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script src="../../static/ai_sidebar.js"></script>
+<link rel="stylesheet" href="../../static/css/tutor_bar.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<div id="tutor-bar-wrap">
+  <button id="tutor-bar-btn">📚 AI Tutor</button>
+  <div id="tutor-bar-panel">
+    <div id="tutor-bar-header">
+      <span>Big Pickle Tutor — asks you questions</span>
+      <button id="tutor-bar-close">&times;</button>
+    </div>
+    <div id="tutor-bar-output"></div>
+    <div id="tutor-bar-input-area">
+      <span class="tutor-prompt" id="tutor-prompt-label">In [1]:</span>
+      <textarea id="tutor-bar-input" rows="2" placeholder="Type your answer or ask a question..."></textarea>
+      <button id="tutor-bar-send">Run</button>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/marked@15.0.7/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script src="../../static/tutor_bar.js"></script>
+<script src="../../static/cell_tutor_links.js"></script></body>
 </html>
