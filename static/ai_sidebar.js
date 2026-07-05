@@ -72,11 +72,19 @@
       if (focusedCellType === "code" && cells[i].classList.contains("jp-MarkdownCell")) continue;
       if (focusedCellType === "markdown" && cells[i].classList.contains("jp-CodeCell")) continue;
       var t = (cells[i].textContent || "").trim();
+      if (focusedCell && t === focusedCell) continue;
       if (t) parts.push(t);
     }
     var text = parts.join("\n\n");
     if (focusedCell) {
-      text = "--- Cell of interest ---\n" + focusedCell + "\n--- Rest of notebook ---\n\n" + text;
+      text =
+        "You are answering a question about one selected notebook block.\n" +
+        "Treat the SELECTED BLOCK as the primary source. Focus your explanation on that block only.\n" +
+        "Use the surrounding notebook context only lightly for orientation if it is necessary.\n\n" +
+        "--- SELECTED BLOCK: PRIMARY CONTEXT ---\n" +
+        focusedCell.slice(0, 5000) +
+        "\n\n--- SURROUNDING NOTEBOOK CONTEXT: OPTIONAL BACKGROUND ONLY ---\n" +
+        text.slice(0, 2500);
     }
     return text.slice(0, 8000);
   }
@@ -85,8 +93,15 @@
     checkNotebookChanged();
     var q = input.value.trim();
     if (!q) return;
+    var displayQuestion = q;
     input.value = "";
-    addMsg("user", q);
+    if (focusedCell) {
+      q =
+        "Answer this question with heavy emphasis on the selected block only. " +
+        "Use the rest of the notebook only as light background if needed.\n\n" +
+        q;
+    }
+    addMsg("user", displayQuestion);
     addMsg("loading", "Thinking...");
     send.disabled = true;
     console.log("[DEBUG] ai_sidebar ask() — question:", q.slice(0, 120));
