@@ -180,7 +180,7 @@ export async function getPageConfig(url = null) {
     const doc = parser.parseFromString(text, 'text/html');
     script = doc.getElementById(JUPYTER_CONFIG_ID);
   }
-  return fixRelativeUrls(url, JSON.parse(script.textContent));
+  return fixRelativeUrls(url, script ? JSON.parse(script.textContent) : {});
 }
 
 /**
