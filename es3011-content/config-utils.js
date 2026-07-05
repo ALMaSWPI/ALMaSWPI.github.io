@@ -247,14 +247,14 @@ function addFavicon(config) {
  */
 async function main() {
   const config = await jupyterConfigData();
-  if (config.baseUrl === new URL(here()).pathname) {
+  const preloader = document.getElementById(LITE_MAIN);
+  if (config.baseUrl === new URL(here()).pathname && preloader == null) {
     window.location.href = config.appUrl.replace(/\/?$/, '/index.html');
     return;
   }
   // rewrite the config
   CONFIG_SCRIPT.textContent = JSON.stringify(config, null, 2);
   addFavicon(config);
-  const preloader = document.getElementById(LITE_MAIN);
   const bundle = document.createElement('script');
   bundle.src = preloader.href;
   bundle.main = preloader.attributes.main;

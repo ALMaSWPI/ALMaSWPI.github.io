@@ -1,26 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <title>ES 3011 | Control Engineering</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ES 3011 | Control Engineering</title>
+    <meta name="Description" content="WASM powered Jupyter running in the browser." />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link
+      id="jupyter-lite-main"
+      rel="preload"
+      href="./build/lab/bundle.js?_=7a7e3d6"
+      main="index"
+      as="script"
+    />
+    <script
+      id="jupyter-config-data"
+      type="application/json"
+      data-jupyter-lite-root="."
+    >
+      {
+        "settingsUrl": "./build/schemas",
+        "showLoadingIndicator": true,
+        "themesUrl": "./build/themes",
+        "mode": "multiple-document"
+      }
+    </script>
+    <script>
+      (async function () {
+        await import(
+          './config-utils.js?_=root-entry-1'
+        );
+      }.call(this));
+    </script>
     <style>
-      html,
       body {
-        height: 100%;
         margin: 0;
-        overflow: hidden;
+        padding: 0;
+        transition: background-color 0.3s ease;
       }
 
-      iframe {
-        width: 100%;
-        height: 100%;
-        border: 0;
+      body {
+        background-color: #fff;
+        color: #000;
+      }
+
+      body.jp-mod-dark {
+        background-color: #111;
+        color: #fff;
+      }
+
+      #jupyterlite-loading-indicator {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1000;
+        opacity: 0;
+        transition: opacity 0.5s ease-out;
+        display: none;
+      }
+
+      #jupyterlite-loading-indicator.hidden {
+        animation: fadeOut 0.5s ease-out forwards;
+        pointer-events: none;
+      }
+
+      #jupyterlite-loading-indicator:not(.hidden) {
+        opacity: 1;
         display: block;
+      }
+
+      .jupyterlite-loading-indicator-spinner {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 20px;
+        border: 6px solid rgba(0, 0, 0, 0.1);
+        border-top: 6px solid #FFDC00;
+        border-radius: 50%;
+        animation: jupyter-spin 1s linear infinite;
+      }
+
+      body.jp-mod-dark .jupyterlite-loading-indicator-spinner {
+        border: 6px solid rgba(255, 255, 255, 0.1);
+        border-top: 6px solid #FFDC00;
+      }
+
+      .jupyterlite-loading-indicator-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+        font-size: 16px;
+      }
+
+      body.jp-mod-light .jupyterlite-loading-indicator-text {
+        color: #000000;
+      }
+
+      body.jp-mod-dark .jupyterlite-loading-indicator-text {
+        color: #ffffff;
+      }
+
+      @keyframes jupyter-spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+
+      @keyframes fadeOut {
+        0% { opacity: 1; }
+        100% { opacity: 0; }
       }
     </style>
   </head>
-  <body>
-    <iframe src="./lab/index.html" title="ES 3011 Control Engineering"></iframe>
-  </body>
+  <body class="jp-ThemedContainer" data-notebook="lab"><link rel="stylesheet" href="../static/css/banner.css">
+<div id="spaghettios-banner">WPI ES3011 - Control Engineering</div>
+
+    <div id="jupyterlite-loading-indicator" class="hidden">
+      <div class="jupyterlite-loading-indicator-spinner"></div>
+      <div class="jupyterlite-loading-indicator-text">Loading JupyterLite...</div>
+    </div>
+    <noscript>
+      <div style="text-align: center; padding: 20px;">
+          JupyterLite requires JavaScript to be enabled in your browser.
+      </div>
+    </noscript>
+  <link rel="stylesheet" href="../static/css/cell_tutor_links.css"><script>window.API_BASE="https://al-ma-swpi-github-io.vercel.app";</script>
+<link rel="stylesheet" href="../static/css/ai_sidebar.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<div id="ai-sidebar-wrap">
+  <button id="ai-sidebar-btn" title="Ask Big Pickle">🥒</button>
+  <div id="ai-sidebar-panel">
+    <div id="ai-sidebar-head">
+      <span>Ask Big Pickle</span>
+      <button id="ai-sidebar-close">&times;</button>
+    </div>
+    <div id="ai-sidebar-msgs"></div>
+    <div id="ai-sidebar-foot">
+      <textarea id="ai-sidebar-input" rows="2" placeholder="Ask about this page..."></textarea>
+      <button id="ai-sidebar-send">Send</button>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/marked@15.0.7/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script src="../static/ai_sidebar.js?v=block-focus-1"></script>
+<link rel="stylesheet" href="../static/css/tutor_bar.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<div id="tutor-bar-wrap">
+  <button id="tutor-bar-btn">📚 AI Tutor</button>
+  <div id="tutor-bar-panel">
+    <div id="tutor-bar-header">
+      <span>Big Pickle Tutor — asks you questions</span>
+      <button id="tutor-bar-close">&times;</button>
+    </div>
+    <div id="tutor-bar-output"></div>
+    <div id="tutor-bar-input-area">
+      <span class="tutor-prompt" id="tutor-prompt-label">In [1]:</span>
+      <textarea id="tutor-bar-input" rows="2" placeholder="Type your answer or ask a question..."></textarea>
+      <button id="tutor-bar-send">Run</button>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/marked@15.0.7/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script src="../static/tutor_bar.js"></script>
+<script src="../static/cell_tutor_links.js"></script></body>
 </html>
