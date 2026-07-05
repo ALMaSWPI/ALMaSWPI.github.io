@@ -1,0 +1,71 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2026-07-05T16:51:47.143947Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-07-05T15:36:48.919813Z",
+      "mimetype": null,
+      "name": "lab4.ipynb",
+      "path": "labs/lab4.ipynb",
+      "size": 82075,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2026-07-05T16:51:47.143947Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-07-05T15:36:50.026816Z",
+      "mimetype": null,
+      "name": "lab3.ipynb",
+      "path": "labs/lab3.ipynb",
+      "size": 323718,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2026-07-05T16:51:47.137947Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-07-05T15:36:52.803825Z",
+      "mimetype": null,
+      "name": "lab1.ipynb",
+      "path": "labs/lab1.ipynb",
+      "size": 7388725,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2026-07-05T16:51:47.142947Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-07-05T15:36:51.650821Z",
+      "mimetype": null,
+      "name": "lab2.ipynb",
+      "path": "labs/lab2.ipynb",
+      "size": 7603013,
+      "type": "notebook",
+      "writable": true
+    }
+  ],
+  "created": "2026-07-05T16:51:47.143947Z",
+  "format": "json",
+  "hash": null,
+  "hash_algorithm": null,
+  "last_modified": "2026-07-05T16:51:47.143947Z",
+  "mimetype": null,
+  "name": "labs",
+  "path": "labs",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}

@@ -1,0 +1,57 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2026-07-05T16:51:47.132947Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-06-04T21:10:40.892072Z",
+      "mimetype": null,
+      "name": "extras_differential_drive_pid.ipynb",
+      "path": "extras/extras_differential_drive_pid.ipynb",
+      "size": 24981965,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2026-07-05T16:51:47.114946Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-05-21T19:10:04.180845Z",
+      "mimetype": null,
+      "name": "extras_differential_drive_lqr.ipynb",
+      "path": "extras/extras_differential_drive_lqr.ipynb",
+      "size": 17697010,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2026-07-05T16:51:47.116946Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-06-28T23:40:15.218058Z",
+      "mimetype": null,
+      "name": "extras_differential_drive_mpc.ipynb",
+      "path": "extras/extras_differential_drive_mpc.ipynb",
+      "size": 3531866,
+      "type": "notebook",
+      "writable": true
+    }
+  ],
+  "created": "2026-07-05T16:51:47.117947Z",
+  "format": "json",
+  "hash": null,
+  "hash_algorithm": null,
+  "last_modified": "2026-07-05T16:51:47.117947Z",
+  "mimetype": null,
+  "name": "extras",
+  "path": "extras",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}

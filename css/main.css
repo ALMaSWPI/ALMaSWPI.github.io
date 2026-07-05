@@ -2013,6 +2013,16 @@ a:focus {
   color: var(--almas-ink);
 }
 
+.almas-course-list a {
+  display: block;
+  color: #52636e;
+}
+
+.almas-course-list a:hover,
+.almas-course-list a:focus {
+  color: var(--almas-blue);
+}
+
 .almas-profile-publications {
   margin-top: 84px;
   margin-bottom: 30px;

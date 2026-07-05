@@ -1,0 +1,57 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2026-07-05T16:51:47.190948Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-07-04T15:26:58.658664Z",
+      "mimetype": "application/pdf",
+      "name": "week4.pdf",
+      "path": "lectures/week4/week4.pdf",
+      "size": 20340666,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2026-07-05T16:51:47.177948Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-07-04T15:34:03.032936Z",
+      "mimetype": null,
+      "name": "w4l1_second_order_response.ipynb",
+      "path": "lectures/week4/w4l1_second_order_response.ipynb",
+      "size": 18173,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2026-07-05T16:51:47.177948Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-06-29T00:54:38.082830Z",
+      "mimetype": null,
+      "name": "w4l2_response_analysis.ipynb",
+      "path": "lectures/week4/w4l2_response_analysis.ipynb",
+      "size": 27981,
+      "type": "notebook",
+      "writable": true
+    }
+  ],
+  "created": "2026-07-05T16:51:47.177948Z",
+  "format": "json",
+  "hash": null,
+  "hash_algorithm": null,
+  "last_modified": "2026-07-05T16:51:47.177948Z",
+  "mimetype": null,
+  "name": "week4",
+  "path": "lectures/week4",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}
