@@ -1,0 +1,71 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2026-07-05T16:51:47.165948Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-07-04T15:26:58.618663Z",
+      "mimetype": "application/pdf",
+      "name": "week2.pdf",
+      "path": "lectures/week2/week2.pdf",
+      "size": 14261663,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2026-07-05T16:51:47.155947Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-06-30T19:34:30.370188Z",
+      "mimetype": null,
+      "name": "w2l2_laplace_transform_continued.ipynb",
+      "path": "lectures/week2/w2l2_laplace_transform_continued.ipynb",
+      "size": 23271,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2026-07-05T16:51:47.155947Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-06-29T00:50:34.550962Z",
+      "mimetype": null,
+      "name": "w2l3_state_space.ipynb",
+      "path": "lectures/week2/w2l3_state_space.ipynb",
+      "size": 111281,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2026-07-05T16:51:47.154948Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-07-04T15:34:03.811948Z",
+      "mimetype": null,
+      "name": "w2l1_modeling_msd_system.ipynb",
+      "path": "lectures/week2/w2l1_modeling_msd_system.ipynb",
+      "size": 5783,
+      "type": "notebook",
+      "writable": true
+    }
+  ],
+  "created": "2026-07-05T16:51:47.155947Z",
+  "format": "json",
+  "hash": null,
+  "hash_algorithm": null,
+  "last_modified": "2026-07-05T16:51:47.155947Z",
+  "mimetype": null,
+  "name": "week2",
+  "path": "lectures/week2",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}

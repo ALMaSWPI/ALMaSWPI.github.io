@@ -1,0 +1,43 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2026-07-05T16:51:47.203949Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-07-04T15:26:58.677665Z",
+      "mimetype": "application/pdf",
+      "name": "week5.pdf",
+      "path": "lectures/week5/week5.pdf",
+      "size": 19894549,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2026-07-05T16:51:47.191948Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-07-04T15:34:02.352926Z",
+      "mimetype": null,
+      "name": "w5l1_stability_analysis.ipynb",
+      "path": "lectures/week5/w5l1_stability_analysis.ipynb",
+      "size": 51851,
+      "type": "notebook",
+      "writable": true
+    }
+  ],
+  "created": "2026-07-05T16:51:47.191948Z",
+  "format": "json",
+  "hash": null,
+  "hash_algorithm": null,
+  "last_modified": "2026-07-05T16:51:47.191948Z",
+  "mimetype": null,
+  "name": "week5",
+  "path": "lectures/week5",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}

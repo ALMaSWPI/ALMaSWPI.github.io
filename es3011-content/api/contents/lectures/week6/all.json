@@ -1,0 +1,43 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2026-07-05T16:51:47.214949Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-07-04T15:26:58.693665Z",
+      "mimetype": "application/pdf",
+      "name": "week6.pdf",
+      "path": "lectures/week6/week6.pdf",
+      "size": 16471440,
+      "type": "file",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2026-07-05T16:51:47.204949Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2026-07-04T15:34:01.521913Z",
+      "mimetype": null,
+      "name": "w6l1_toy_car_control.ipynb",
+      "path": "lectures/week6/w6l1_toy_car_control.ipynb",
+      "size": 31833,
+      "type": "notebook",
+      "writable": true
+    }
+  ],
+  "created": "2026-07-05T16:51:47.204949Z",
+  "format": "json",
+  "hash": null,
+  "hash_algorithm": null,
+  "last_modified": "2026-07-05T16:51:47.204949Z",
+  "mimetype": null,
+  "name": "week6",
+  "path": "lectures/week6",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}
