@@ -2014,13 +2014,39 @@ a:focus {
 }
 
 .almas-course-list a {
-  display: block;
-  color: #52636e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  color: var(--almas-blue);
 }
 
 .almas-course-list a:hover,
 .almas-course-list a:focus {
   color: var(--almas-blue);
+}
+
+.almas-course-list li.almas-course-linked {
+  border-color: rgba(21, 116, 185, 0.32);
+  background: linear-gradient(135deg, rgba(21, 116, 185, 0.1), rgba(255, 255, 255, 0.95));
+}
+
+.almas-course-link-label {
+  flex: 0 0 auto;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: rgba(21, 116, 185, 0.12);
+  color: var(--almas-blue);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.almas-course-list a:hover .almas-course-link-label,
+.almas-course-list a:focus .almas-course-link-label {
+  background: var(--almas-blue);
+  color: #fff;
 }
 
 .almas-profile-publications {
