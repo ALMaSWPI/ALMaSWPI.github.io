@@ -166,5 +166,22 @@
 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
 <script src="../../static/tutor_bar.js"></script>
-<script src="../../static/cell_tutor_links.js"></script></body>
+<script src="../../static/cell_tutor_links.js"></script>
+<script>
+  (function () {
+    if (window.sessionStorage.getItem('es3011-root-launch') === '1') {
+      window.sessionStorage.removeItem('es3011-root-launch');
+      var attempts = 0;
+      var cleanUrlWhenReady = window.setInterval(function () {
+        attempts += 1;
+        if (document.querySelector('.jp-FileBrowser, .jp-DirListing')) {
+          window.clearInterval(cleanUrlWhenReady);
+          window.history.replaceState(null, '', '../index.html');
+        } else if (attempts > 160) {
+          window.clearInterval(cleanUrlWhenReady);
+        }
+      }, 250);
+    }
+  }());
+</script></body>
 </html>
