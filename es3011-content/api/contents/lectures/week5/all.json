@@ -2,7 +2,7 @@
   "content": [
     {
       "content": null,
-      "created": "2026-07-05T16:51:47.203949Z",
+      "created": "2026-07-06T01:56:13.535664Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
@@ -16,11 +16,11 @@
     },
     {
       "content": null,
-      "created": "2026-07-05T16:51:47.191948Z",
+      "created": "2026-07-06T01:56:13.522664Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
-      "last_modified": "2026-07-04T15:34:02.352926Z",
+      "last_modified": "2026-07-06T01:52:36.105755Z",
       "mimetype": null,
       "name": "w5l1_stability_analysis.ipynb",
       "path": "lectures/week5/w5l1_stability_analysis.ipynb",
@@ -29,11 +29,11 @@
       "writable": true
     }
   ],
-  "created": "2026-07-05T16:51:47.191948Z",
+  "created": "2026-07-06T01:56:13.522664Z",
   "format": "json",
   "hash": null,
   "hash_algorithm": null,
-  "last_modified": "2026-07-05T16:51:47.191948Z",
+  "last_modified": "2026-07-06T01:56:13.522664Z",
   "mimetype": null,
   "name": "week5",
   "path": "lectures/week5",

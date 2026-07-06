@@ -2,7 +2,7 @@
   "content": [
     {
       "content": null,
-      "created": "2026-07-05T16:51:47.214949Z",
+      "created": "2026-07-06T01:56:13.546664Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
@@ -16,11 +16,11 @@
     },
     {
       "content": null,
-      "created": "2026-07-05T16:51:47.204949Z",
+      "created": "2026-07-06T01:56:13.535664Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
-      "last_modified": "2026-07-04T15:34:01.521913Z",
+      "last_modified": "2026-07-06T01:52:34.781743Z",
       "mimetype": null,
       "name": "w6l1_toy_car_control.ipynb",
       "path": "lectures/week6/w6l1_toy_car_control.ipynb",
@@ -29,11 +29,11 @@
       "writable": true
     }
   ],
-  "created": "2026-07-05T16:51:47.204949Z",
+  "created": "2026-07-06T01:56:13.536664Z",
   "format": "json",
   "hash": null,
   "hash_algorithm": null,
-  "last_modified": "2026-07-05T16:51:47.204949Z",
+  "last_modified": "2026-07-06T01:56:13.536664Z",
   "mimetype": null,
   "name": "week6",
   "path": "lectures/week6",
