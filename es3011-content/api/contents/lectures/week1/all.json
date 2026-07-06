@@ -2,7 +2,7 @@
   "content": [
     {
       "content": null,
-      "created": "2026-07-05T16:51:47.145947Z",
+      "created": "2026-07-06T01:56:13.474663Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
@@ -16,7 +16,7 @@
     },
     {
       "content": null,
-      "created": "2026-07-05T16:51:47.154948Z",
+      "created": "2026-07-06T01:56:13.482663Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
@@ -30,7 +30,7 @@
     },
     {
       "content": null,
-      "created": "2026-07-05T16:51:47.144947Z",
+      "created": "2026-07-06T01:56:13.473663Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
@@ -44,7 +44,7 @@
     },
     {
       "content": null,
-      "created": "2026-07-05T16:51:47.146947Z",
+      "created": "2026-07-06T01:56:13.474663Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
@@ -58,21 +58,21 @@
     },
     {
       "content": null,
-      "created": "2026-07-05T16:51:47.144947Z",
+      "created": "2026-07-06T01:56:13.473663Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
-      "last_modified": "2026-07-04T15:34:04.648961Z",
+      "last_modified": "2026-07-06T01:52:38.003773Z",
       "mimetype": null,
       "name": "w1l1_introduction.ipynb",
       "path": "lectures/week1/w1l1_introduction.ipynb",
-      "size": 15684,
+      "size": 17029,
       "type": "notebook",
       "writable": true
     },
     {
       "content": null,
-      "created": "2026-07-05T16:51:47.144947Z",
+      "created": "2026-07-06T01:56:13.473663Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
@@ -86,7 +86,7 @@
     },
     {
       "content": null,
-      "created": "2026-07-05T16:51:47.145947Z",
+      "created": "2026-07-06T01:56:13.474663Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
@@ -100,7 +100,7 @@
     },
     {
       "content": null,
-      "created": "2026-07-05T16:51:47.145947Z",
+      "created": "2026-07-06T01:56:13.474663Z",
       "format": null,
       "hash": null,
       "hash_algorithm": null,
@@ -113,11 +113,11 @@
       "writable": true
     }
   ],
-  "created": "2026-07-05T16:51:47.146947Z",
+  "created": "2026-07-06T01:56:13.475663Z",
   "format": "json",
   "hash": null,
   "hash_algorithm": null,
-  "last_modified": "2026-07-05T16:51:47.146947Z",
+  "last_modified": "2026-07-06T01:56:13.475663Z",
   "mimetype": null,
   "name": "week1",
   "path": "lectures/week1",
