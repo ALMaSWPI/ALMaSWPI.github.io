@@ -5,3 +5,4 @@ videos/
 !Videos/*.mov
 !Videos/*.mp4
 node_modules/
+_build/
