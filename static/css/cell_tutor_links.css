@@ -10,11 +10,11 @@
 
 .ask-ai-tutor-link a {
   display: inline-block;
-  color: #fff;
+  color: var(--text-inverse);
   font-size: 11px;
   text-decoration: none;
   cursor: pointer;
-  background: #6c9eff;
+  background: var(--text-link);
   padding: 4px 14px;
   border-radius: 4px;
   opacity: 0.6;
