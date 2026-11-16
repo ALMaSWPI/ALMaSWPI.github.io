@@ -112,7 +112,9 @@
       }
     </style>
   </head>
-  <body class="jp-ThemedContainer" data-notebook="lab">
+  <body class="jp-ThemedContainer" data-notebook="lab"><link rel="stylesheet" href="../../static/css/banner.css">
+<div id="spaghettios-banner">WPI ES3011 - Control Engineering</div>
+
     <div id="jupyterlite-loading-indicator" class="hidden">
       <div class="jupyterlite-loading-indicator-spinner"></div>
       <div class="jupyterlite-loading-indicator-text">Loading JupyterLite...</div>
@@ -139,5 +141,104 @@
     }
   }());
 </script>
-  </body>
+  <link rel="stylesheet" href="../../static/css/palette.css"><link rel="stylesheet" href="../../static/css/hide_code.css"><link rel="stylesheet" href="../../static/css/cell_tutor_links.css"><script src="../../static/hide_code.js"></script><script>window.API_BASE="https://al-ma-swpi-github-io.vercel.app";</script>
+<link rel="stylesheet" href="../../static/css/ai_sidebar.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<div id="ai-sidebar-wrap">
+  <button id="ai-sidebar-btn" title="Ask Gemini">✨</button>
+  <div id="ai-sidebar-panel">
+    <div id="ai-sidebar-head">
+      <span>Ask Gemini</span>
+      <button id="ai-sidebar-close">&times;</button>
+    </div>
+    <div id="ai-sidebar-msgs"></div>
+    <div id="ai-sidebar-foot">
+      <textarea id="ai-sidebar-input" rows="2" placeholder="Ask about this page..."></textarea>
+      <button id="ai-sidebar-send">Send</button>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/marked@15.0.7/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<!-- Shared API helper (defines window.streamChat) — must load before ai_sidebar.js -->
+<script src="../../static/chat_stream.js"></script>
+<script src="../../static/ai_sidebar.js"></script>
+<link rel="stylesheet" href="../../static/css/tutor_bar.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<div id="tutor-bar-wrap">
+  <button id="tutor-bar-btn">📚 AI Tutor</button>
+  <div id="tutor-bar-panel">
+    <div id="tutor-bar-header">
+      <span>Gemini Tutor — asks you questions</span>
+      <button id="tutor-bar-close">&times;</button>
+    </div>
+    <div id="tutor-bar-output"></div>
+    <div id="tutor-bar-input-area">
+      <span class="tutor-prompt" id="tutor-prompt-label">In [1]:</span>
+      <textarea id="tutor-bar-input" rows="2" placeholder="Type your answer or ask a question..."></textarea>
+      <button id="tutor-bar-send">Run</button>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/marked@15.0.7/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<!-- Shared API helper (defines window.streamChat) — must load before tutor_bar.js -->
+<script src="../../static/chat_stream.js"></script>
+<script src="../../static/tutor_bar.js"></script>
+<!-- ===== Settings panel ===== -->
+<!-- Settings gear button (bottom-right corner of every notebook page).
+     Injected by serve_with_banner() in app.py just before </body>.
+
+     Clicking the gear (&#x2699;) opens a small popup panel with two
+     toggle switches:
+       "Show Code"       — hides/shows all code cell input areas
+       "Show AI Buttons" — hides/shows the Gemini sidebar button,
+                           the AI Tutor bar button, and the
+                           "Ask about this block" cell links
+
+     Toggles delegate to hide_code.js (window.setCodeVisibility and
+     window.setAIVisibility) which applies CSS classes and persists
+     state to localStorage. -->
+
+<!-- Settings panel styles -->
+<link rel="stylesheet" href="../../static/css/settings_panel.css">
+
+<div id="settings-wrap">
+  <!-- Gear button — fixed to bottom-right corner of the viewport -->
+  <button id="settings-btn" title="Settings">&#x2699;</button>
+
+  <!-- The popup panel containing the toggle switches -->
+  <div id="settings-panel">
+    <!-- Header bar with title and close button -->
+    <div id="settings-header">
+      <span>Settings</span>
+      <button id="settings-close">&times;</button>
+    </div>
+    <!-- Body containing the toggle items -->
+    <div id="settings-body">
+      <!-- Toggle for code cell visibility -->
+      <div class="settings-item">
+        <span class="settings-label">Show Code</span>
+        <label class="settings-toggle">
+          <input type="checkbox" id="code-visibility-toggle">
+          <span class="settings-slider"></span>
+        </label>
+      </div>
+      <!-- Toggle for AI element visibility -->
+      <div class="settings-item">
+        <span class="settings-label">Show AI Buttons</span>
+        <label class="settings-toggle">
+          <input type="checkbox" id="ai-visibility-toggle">
+          <span class="settings-slider"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Settings panel logic — open/close, toggle event wiring -->
+<script src="../../static/settings_panel.js"></script>
+<script src="../../static/cell_tutor_links.js"></script></body>
 </html>

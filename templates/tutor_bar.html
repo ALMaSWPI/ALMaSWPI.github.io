@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="/static/css/tutor_bar.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<div id="tutor-bar-wrap">
+  <button id="tutor-bar-btn">📚 AI Tutor</button>
+  <div id="tutor-bar-panel">
+    <div id="tutor-bar-header">
+      <span>Gemini Tutor — asks you questions</span>
+      <button id="tutor-bar-close">&times;</button>
+    </div>
+    <div id="tutor-bar-output"></div>
+    <div id="tutor-bar-input-area">
+      <span class="tutor-prompt" id="tutor-prompt-label">In [1]:</span>
+      <textarea id="tutor-bar-input" rows="2" placeholder="Type your answer or ask a question..."></textarea>
+      <button id="tutor-bar-send">Run</button>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/marked@15.0.7/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<!-- Shared API helper (defines window.streamChat) — must load before tutor_bar.js -->
+<script src="/static/chat_stream.js"></script>
+<script src="/static/tutor_bar.js"></script>

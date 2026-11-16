@@ -1,0 +1,11 @@
+.jp-mod-hide-code .jp-CodeCell .jp-Cell-inputWrapper {
+  display: none !important;
+}
+
+.jp-mod-hide-ai #ai-sidebar-btn,
+.jp-mod-hide-ai #ai-sidebar-panel,
+.jp-mod-hide-ai #tutor-bar-btn,
+.jp-mod-hide-ai #tutor-bar-panel,
+.jp-mod-hide-ai .ask-ai-tutor-link {
+  display: none !important;
+}

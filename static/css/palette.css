@@ -1,0 +1,49 @@
+:root {
+  /* --- Backgrounds --- */
+  --bg-surface: #1a1a2e;
+  --bg-surface-hover: #16213e;
+  --bg-elevated: #0d0d1a;
+  --bg-input: #0d1b2a;
+  --bg-output: #12121e;
+  --bg-card: #11243a;
+  --bg-message-alt: #2d2d44;
+  --bg-message-error: #5c1a1a;
+  --bg-accent: #0f3460;
+  --bg-accent-hover: #1a5276;
+  --bg-banner: #AC2B37;
+  --bg-tip: #1a2e1a;
+  --bg-cta: #c33;
+  --bg-cta-hover: #a22;
+  --bg-alt: #444;
+
+  /* --- Text --- */
+  --text-primary: #eee;
+  --text-secondary: #e0e0e0;
+  --text-muted: #aaa;
+  --text-heading: #ddd;
+  --text-inverse: #fff;
+  --text-link: #6c9eff;
+  --text-error: #f55;
+  --text-error-bright: #f88;
+  --text-dim: #555;
+  --text-subdued: #999;
+  --text-para: #b0b0b0;
+  --text-doc: #bbb;
+  --text-faded: #888;
+  --text-accent: #e88;
+
+  /* --- Borders --- */
+  --border-primary: #333;
+  --border-secondary: #444;
+  --border-muted: #555;
+  --border-accent: #1a3a5c;
+
+  /* --- Misc --- */
+  --text-tertiary: #ccc;
+
+  /* --- Shadows --- */
+  --shadow-sm: 0 2px 10px rgba(0,0,0,.2);
+  --shadow-md: 0 2px 10px rgba(0,0,0,.3);
+  --shadow-lg: 0 2px 10px rgba(0,0,0,.4);
+  --shadow-xl: 0 4px 20px rgba(0,0,0,.5);
+}

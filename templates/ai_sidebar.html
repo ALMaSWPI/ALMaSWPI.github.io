@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/static/css/ai_sidebar.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<div id="ai-sidebar-wrap">
+  <button id="ai-sidebar-btn" title="Ask Gemini">✨</button>
+  <div id="ai-sidebar-panel">
+    <div id="ai-sidebar-head">
+      <span>Ask Gemini</span>
+      <button id="ai-sidebar-close">&times;</button>
+    </div>
+    <div id="ai-sidebar-msgs"></div>
+    <div id="ai-sidebar-foot">
+      <textarea id="ai-sidebar-input" rows="2" placeholder="Ask about this page..."></textarea>
+      <button id="ai-sidebar-send">Send</button>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/marked@15.0.7/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<!-- Shared API helper (defines window.streamChat) — must load before ai_sidebar.js -->
+<script src="/static/chat_stream.js"></script>
+<script src="/static/ai_sidebar.js"></script>

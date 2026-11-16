@@ -1,0 +1,53 @@
+<!-- ===== Settings panel ===== -->
+<!-- Settings gear button (bottom-right corner of every notebook page).
+     Injected by serve_with_banner() in app.py just before </body>.
+
+     Clicking the gear (&#x2699;) opens a small popup panel with two
+     toggle switches:
+       "Show Code"       — hides/shows all code cell input areas
+       "Show AI Buttons" — hides/shows the Gemini sidebar button,
+                           the AI Tutor bar button, and the
+                           "Ask about this block" cell links
+
+     Toggles delegate to hide_code.js (window.setCodeVisibility and
+     window.setAIVisibility) which applies CSS classes and persists
+     state to localStorage. -->
+
+<!-- Settings panel styles -->
+<link rel="stylesheet" href="/static/css/settings_panel.css">
+
+<div id="settings-wrap">
+  <!-- Gear button — fixed to bottom-right corner of the viewport -->
+  <button id="settings-btn" title="Settings">&#x2699;</button>
+
+  <!-- The popup panel containing the toggle switches -->
+  <div id="settings-panel">
+    <!-- Header bar with title and close button -->
+    <div id="settings-header">
+      <span>Settings</span>
+      <button id="settings-close">&times;</button>
+    </div>
+    <!-- Body containing the toggle items -->
+    <div id="settings-body">
+      <!-- Toggle for code cell visibility -->
+      <div class="settings-item">
+        <span class="settings-label">Show Code</span>
+        <label class="settings-toggle">
+          <input type="checkbox" id="code-visibility-toggle">
+          <span class="settings-slider"></span>
+        </label>
+      </div>
+      <!-- Toggle for AI element visibility -->
+      <div class="settings-item">
+        <span class="settings-label">Show AI Buttons</span>
+        <label class="settings-toggle">
+          <input type="checkbox" id="ai-visibility-toggle">
+          <span class="settings-slider"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Settings panel logic — open/close, toggle event wiring -->
+<script src="/static/settings_panel.js"></script>
