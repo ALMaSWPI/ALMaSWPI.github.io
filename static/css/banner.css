@@ -1,0 +1,18 @@
+body {
+  padding-top: 28px;
+}
+
+#spaghettios-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  background: #AC2B37;
+  color: #fff;
+  text-align: center;
+  padding: 6px 0;
+  font: bold 14px/1.4 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
